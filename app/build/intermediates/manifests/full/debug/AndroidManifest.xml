@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.proyecto.appproffrontend"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="25" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.proyecto.appproffrontend.LoginActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.proyecto.appproffrontend.LoginActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.proyecto.appproffrontend.Perfil_Profesor"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.proyecto.appproffrontend.LoginActivity" />
+        <activity
+            android:name="com.example.proyecto.appproffrontend.Pagar_Profesor"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.proyecto.appproffrontend.Perfil_Profesor" />
+        <activity
+            android:name="com.example.proyecto.appproffrontend.Ver_Profesor"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.proyecto.appproffrontend.Listar_Profesores" >
+        </activity>
+        <activity
+            android:name="com.example.proyecto.appproffrontend.Ver_Favorito"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.proyecto.appproffrontend.Ver_favoritos" >
+        </activity>
+        <activity
+            android:name="com.example.proyecto.appproffrontend.Busqueda_Profesores"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.proyecto.appproffrontend.LoginActivity" />
+        <activity
+            android:name="com.example.proyecto.appproffrontend.Listar_Profesores"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.proyecto.appproffrontend.Busqueda_Profesores" />
+        <activity
+            android:name="com.example.proyecto.appproffrontend.Modificar_Perfil_1"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.proyecto.appproffrontend.Perfil_Profesor" />
+        <activity
+            android:name="com.example.proyecto.appproffrontend.Modificar_Perfil_2"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.proyecto.appproffrontend.Modificar_Perfil_1" />
+        <activity
+            android:name="com.example.proyecto.appproffrontend.Registro1"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.proyecto.appproffrontend.LoginActivity" >
+        </activity>
+        <activity
+            android:name="com.example.proyecto.appproffrontend.Registro2"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.proyecto.appproffrontend.Registro1" />
+        <activity
+            android:name="com.example.proyecto.appproffrontend.Registro3"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.proyecto.appproffrontend.Registro2" >
+        </activity>
+        <activity
+            android:name="com.example.proyecto.appproffrontend.Ver_favoritos"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.proyecto.appproffrontend.Busqueda_Profesores" >
+        </activity>
+    </application>
+
+</manifest>

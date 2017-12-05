@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Horarios*"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+    <com.example.proyecto.appproffrontend.MultiSpinner
+        android:id="@+id/horariosProfesorReg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Asignaturas*"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+    <com.example.proyecto.appproffrontend.MultiSpinner
+        android:id="@+id/asignaturasProfesorReg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/curso"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:text="Curso"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <com.example.proyecto.appproffrontend.MultiSpinner
+            android:id="@+id/cursoProfesorReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/modo"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:text="Modalidad"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <Spinner
+            android:id="@+id/modalidadProfesorReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/TyC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:checked="false"
+            android:duplicateParentState="false"
+            android:text="He leido y acepto los terminos y condiciones*" />
+
+        <Button
+            android:id="@+id/registerbutton"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Registrarse" />
+    </LinearLayout>
+
+</LinearLayout>

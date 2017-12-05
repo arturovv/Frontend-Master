@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Approf</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_login">Login</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_log_in">Iniciar sesión</string>
+    <string name="action_log_in_prof">Iniciar Profesor</string>
+    <string name="action_log_in_alu"> Iniciar  Alumno</string>
+
+    <string name="action_register">Registrarse</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="usarioProfesor">Usuario: </string>
+    <string name="tlfnoProfesor">Teléfono: </string>
+    <string name="emailProfesor">E-mail: </string>
+    <string name="ciudadProfesor">Ciudad: </string>
+    <string name="horarioProfesor">Horarios: </string>
+    <string name="asignaturasProfesor">Asignaturas: </string>
+    <string name="cursosProfesor">Cursos: </string>
+    <string name="valoracionProfesor">Valoración: </string>
+    <string name="experienciaProfesor">Experiencia: </string>
+    <string name="modalidadProfesor">Modalidad: </string>
+    <string name="action_mod_prof">Modificar perfil</string>
+    <string name="action_pag_prof">Pagar</string>
+
+    <string name="nombreProfesorPerfil">Nombre: </string>
+    <string name="tlfnoProfesorPerfil">Teléfono: </string>
+    <string name="ciudadProfesorPerfil">Ciudad: </string>
+    <string name="cursosProfesorPerfil">Cursos: </string>
+    <string name="emailProfesorPerfil">E-mail: </string>
+    <string name="horarioProfesorPerfil">Horario: </string>
+
+    <string name="asignaturasProfesorPerfil">Asignaturas: </string>
+    <string name="modalidadProfesorPerfil">Modalidad: </string>
+    <string name="experienciaProfesorPerfil">Experiencia: </string>
+    <string name="valoracionesProfesorPerfil">Valoración media: </string>
+    <string name="votarProfesorPerfil">Valorar </string>
+    <string name="action_valorar_prof">Enviar valoración</string>
+    <string name="action_addfav_prof">Añadir a profesores favoritos</string>
+
+
+    <string name="nombreProfesorBusqueda">Nombre: </string>
+    <string name="ciudadProfesorBusqueda">Ciudad: </string>
+    <string name="cursosProfesorBusqueda">Cursos: </string>
+    <string name="asignaturasProfesorBusqueda">Asignaturas: </string>
+    <string name="horarioProfesorBusqueda">Horario: </string>
+    <string name="action_search_prof">Buscar</string>
+    <string name="action_fav_prof">Profesores favoritos</string>
+
+    <string name="nombreProfesorListar">Nombre: </string>
+    <string name="ciudadProfesorListar">Ciudad: </string>
+    <string name="cursosProfesorListar">Cursos: </string>
+    <string name="asignaturasProfesorListar">Asignaturas: </string>
+    <string name="horarioProfesorListar">Horario: </string>
+    <string name="valoracionesProfesorListar">Valoración media: </string>
+
+    <string name="tar_credito">Número de la tarjeta: </string>
+    <string name="digito">Dígito de control: </string>
+    <string name="caduciad">Fecha de caducidad: </string>
+    <string name="propietario">Nombre del titular: </string>
+    <string name="condiciones">Mediante el pago de 5$ se permite a los profesores la promoción de su anuncio, es decir, cuando un alumno realice una búsqueda cuyas condiciones satisfagan a su perfil este aparecerá en las primeras posiciones del resultado. </string>
+
+    <string name="no_profesores">No se han encontrado resultados para la búsqueda</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="confirmar">Confirmar</string>
+
+    <string-array name="favoritos_array">
+        <item>Fernando García Vallés</item>
+        <item>María Villarroya</item>
+        <item>Jamarro</item>
+        <item>Barrabin Barrabash</item>
+        <item>Profesor ejemplo</item>
+    </string-array>
+
+</resources>
