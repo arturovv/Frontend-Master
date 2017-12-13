@@ -517,10 +517,10 @@
       <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18775">
-              <caret line="751" column="11" lean-forward="false" selection-start-line="751" selection-start-column="11" selection-end-line="751" selection-end-column="11" />
+            <state relative-caret-position="18050">
+              <caret line="722" column="11" lean-forward="false" selection-start-line="722" selection-start-column="11" selection-end-line="722" selection-end-column="11" />
               <folding>
-                <marker date="1513184684171" expanded="true" signature="287734:287749" ph="..." />
+                <marker date="1513184747514" expanded="true" signature="283753:283768" ph="..." />
               </folding>
             </state>
           </provider>
@@ -2499,7 +2499,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513184747465" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513185192601" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2547,7 +2547,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513184747465" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513185192602" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2709,7 +2709,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513184747472" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513185192604" />
       </method>
     </configuration>
     <list size="1">
@@ -2770,7 +2770,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1934" height="1042" extended-state="0" />
+    <frame x="-11" y="-11" width="1934" height="1042" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2789,7 +2789,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973032" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973032" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2847,7 +2847,7 @@
         <state relative-caret-position="5100">
           <caret line="204" column="11" lean-forward="false" selection-start-line="204" selection-start-column="11" selection-end-line="204" selection-end-column="11" />
           <folding>
-            <marker date="1513184684171" expanded="true" signature="287734:287749" ph="..." />
+            <marker date="1513184747514" expanded="true" signature="283753:283768" ph="..." />
           </folding>
         </state>
       </provider>
@@ -2900,7 +2900,7 @@
         <state relative-caret-position="2600">
           <caret line="104" column="11" lean-forward="false" selection-start-line="104" selection-start-column="11" selection-end-line="104" selection-end-column="11" />
           <folding>
-            <marker date="1513184684171" expanded="true" signature="287734:287749" ph="..." />
+            <marker date="1513184747514" expanded="true" signature="283753:283768" ph="..." />
           </folding>
         </state>
       </provider>
@@ -2953,7 +2953,7 @@
         <state relative-caret-position="2500">
           <caret line="100" column="11" lean-forward="false" selection-start-line="100" selection-start-column="11" selection-end-line="100" selection-end-column="11" />
           <folding>
-            <marker date="1513184684171" expanded="true" signature="287734:287749" ph="..." />
+            <marker date="1513184747514" expanded="true" signature="283753:283768" ph="..." />
           </folding>
         </state>
       </provider>
@@ -3006,7 +3006,7 @@
         <state relative-caret-position="5425">
           <caret line="217" column="11" lean-forward="true" selection-start-line="217" selection-start-column="11" selection-end-line="217" selection-end-column="11" />
           <folding>
-            <marker date="1513184684171" expanded="true" signature="287734:287749" ph="..." />
+            <marker date="1513184747514" expanded="true" signature="283753:283768" ph="..." />
           </folding>
         </state>
       </provider>
@@ -3111,10 +3111,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18775">
-          <caret line="751" column="11" lean-forward="false" selection-start-line="751" selection-start-column="11" selection-end-line="751" selection-end-column="11" />
+        <state relative-caret-position="18050">
+          <caret line="722" column="11" lean-forward="false" selection-start-line="722" selection-start-column="11" selection-end-line="722" selection-end-column="11" />
           <folding>
-            <marker date="1513184684171" expanded="true" signature="287734:287749" ph="..." />
+            <marker date="1513184747514" expanded="true" signature="283753:283768" ph="..." />
           </folding>
         </state>
       </provider>
