@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:2:1-82:12
-INJECTED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:2:1-82:12
-INJECTED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:2:1-82:12
-INJECTED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:2:1-82:12
+ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:2:1-82:12
+INJECTED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:2:1-82:12
+INJECTED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:2:1-82:12
+INJECTED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:2:1-82:12
 MERGED from [com.android.support:design:25.0.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\design-25.0.0.aar\207d921392712dede58cee4e333c52c7\AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:appcompat-v7:25.0.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.0.0.aar\5e9bceeb90605226ad88465647c291cc\AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:animated-vector-drawable:25.0.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.0.0.aar\7f4c0b6c751dafce2c2784ed79cbf567\AndroidManifest.xml:17:1-24:12
@@ -17,41 +17,41 @@ MERGED from [com.android.support:support-media-compat:25.0.0] C:\Users\Arturo\.g
 MERGED from [com.android.support:support-core-utils:25.0.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.0.0.aar\185c5312b69089e6b0831412bdc287d7\AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:support-core-ui:25.0.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.0.0.aar\05d55332b90485a3fb6bf9cb3ca2116b\AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:support-compat:25.0.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\support-compat-25.0.0.aar\27c2bfa0a92e155139dce7ae4d69f52a\AndroidManifest.xml:17:1-27:12
-INJECTED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:2:1-82:12
-INJECTED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:2:1-82:12
-INJECTED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:2:1-82:12
+INJECTED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:2:1-82:12
+INJECTED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:2:1-82:12
+INJECTED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:2:1-82:12
 	package
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:3:5-51
-		INJECTED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:3:5-51
+		INJECTED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:2:1-82:12
-		INJECTED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:2:1-82:12
+		INJECTED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:2:1-82:12
-		INJECTED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:2:1-82:12
+		INJECTED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.GET_ACCOUNTS
-ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:6:5-71
+ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:6:5-71
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:6:22-68
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:6:22-68
 uses-permission#android.permission.READ_PROFILE
-ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:7:5-71
+ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:7:5-71
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:7:22-68
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:7:22-68
 uses-permission#android.permission.READ_CONTACTS
-ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:8:5-72
+ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:8:5-72
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:8:22-69
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:8:22-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:9:5-83
+ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:9:5-83
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:9:22-64
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:9:22-64
 application
-ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:11:5-80:19
+ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:11:5-80:19
 MERGED from [com.android.support:design:25.0.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\design-25.0.0.aar\207d921392712dede58cee4e333c52c7\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:design:25.0.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\design-25.0.0.aar\207d921392712dede58cee4e333c52c7\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:appcompat-v7:25.0.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.0.0.aar\5e9bceeb90605226ad88465647c291cc\AndroidManifest.xml:25:5-20
@@ -77,133 +77,133 @@ MERGED from [com.android.support:support-core-ui:25.0.0] C:\Users\Arturo\.gradle
 MERGED from [com.android.support:support-compat:25.0.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\support-compat-25.0.0.aar\27c2bfa0a92e155139dce7ae4d69f52a\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:25.0.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\support-compat-25.0.0.aar\27c2bfa0a92e155139dce7ae4d69f52a\AndroidManifest.xml:25:5-20
 	android:supportsRtl
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:15:9-35
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:15:9-35
 	android:label
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:14:9-41
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:14:9-41
 	android:icon
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:13:9-43
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:13:9-43
 	android:allowBackup
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:12:9-35
 	android:theme
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:16:9-40
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:16:9-40
 activity#com.example.proyecto.appproffrontend.LoginActivity
-ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:17:9-26:20
+ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:17:9-26:20
 	android:parentActivityName
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:20:13-92
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:20:13-92
 	android:label
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:19:13-45
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:19:13-45
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:18:13-78
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:18:13-78
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:21:13-25:29
+ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:21:13-25:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:22:17-69
+ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:22:25-66
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:24:17-77
+ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:24:17-77
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:24:27-74
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:24:27-74
 activity#com.example.proyecto.appproffrontend.Perfil_Profesor
-ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:27:9-30:95
+ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:27:9-30:95
 	android:parentActivityName
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:30:13-92
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:30:13-92
 	android:label
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:29:13-45
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:29:13-45
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:28:13-44
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:28:13-44
 activity#com.example.proyecto.appproffrontend.Pagar_Profesor
-ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:31:9-34:61
+ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:31:9-34:61
 	android:parentActivityName
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:34:13-58
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:34:13-58
 	android:label
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:33:13-45
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:33:13-45
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:32:13-79
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:32:13-79
 activity#com.example.proyecto.appproffrontend.Ver_Profesor
-ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:35:9-39:20
+ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:35:9-39:20
 	android:parentActivityName
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:38:13-96
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:38:13-96
 	android:label
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:37:13-45
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:37:13-45
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:36:13-77
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:36:13-77
 activity#com.example.proyecto.appproffrontend.Ver_Favorito
-ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:40:9-44:20
+ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:40:9-44:20
 	android:parentActivityName
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:43:13-92
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:43:13-92
 	android:label
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:42:13-45
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:42:13-45
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:41:13-77
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:41:13-77
 activity#com.example.proyecto.appproffrontend.Busqueda_Profesores
-ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:45:9-48:95
+ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:45:9-48:95
 	android:parentActivityName
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:48:13-92
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:48:13-92
 	android:label
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:47:13-45
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:47:13-45
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:46:13-84
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:46:13-84
 activity#com.example.proyecto.appproffrontend.Listar_Profesores
-ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:49:9-52:101
+ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:49:9-52:101
 	android:parentActivityName
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:52:13-98
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:52:13-98
 	android:label
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:51:13-45
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:51:13-45
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:50:13-82
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:50:13-82
 activity#com.example.proyecto.appproffrontend.Modificar_Perfil_1
-ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:53:9-56:61
+ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:53:9-56:61
 	android:parentActivityName
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:56:13-58
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:56:13-58
 	android:label
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:55:13-45
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:55:13-45
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:54:13-83
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:54:13-83
 activity#com.example.proyecto.appproffrontend.Modificar_Perfil_2
-ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:57:9-60:100
+ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:57:9-60:100
 	android:parentActivityName
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:60:13-97
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:60:13-97
 	android:label
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:59:13-45
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:59:13-45
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:58:13-83
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:58:13-83
 activity#com.example.proyecto.appproffrontend.Registro1
-ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:61:9-65:24
+ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:61:9-65:24
 	android:parentActivityName
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:64:13-92
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:64:13-92
 	android:label
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:63:13-45
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:63:13-45
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:62:13-74
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:62:13-74
 activity#com.example.proyecto.appproffrontend.Registro2
-ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:66:9-69:91
+ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:66:9-69:91
 	android:parentActivityName
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:69:13-88
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:69:13-88
 	android:label
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:68:13-45
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:68:13-45
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:67:13-74
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:67:13-74
 activity#com.example.proyecto.appproffrontend.Registro3
-ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:70:9-74:20
+ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:70:9-74:20
 	android:parentActivityName
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:73:13-88
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:73:13-88
 	android:label
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:72:13-45
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:72:13-45
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:71:13-74
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:71:13-74
 activity#com.example.proyecto.appproffrontend.Ver_favoritos
-ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:75:9-79:20
+ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:75:9-79:20
 	android:parentActivityName
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:78:13-98
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:78:13-98
 	android:label
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:76:13-45
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:76:13-45
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml:77:13-78
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml:77:13-78
 uses-sdk
-INJECTED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml
 MERGED from [com.android.support:design:25.0.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\design-25.0.0.aar\207d921392712dede58cee4e333c52c7\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:design:25.0.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\design-25.0.0.aar\207d921392712dede58cee4e333c52c7\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:appcompat-v7:25.0.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.0.0.aar\5e9bceeb90605226ad88465647c291cc\AndroidManifest.xml:21:5-23:78
@@ -230,15 +230,15 @@ MERGED from [com.android.support:support-core-ui:25.0.0] C:\Users\Arturo\.gradle
 MERGED from [com.android.support:support-core-ui:25.0.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.0.0.aar\05d55332b90485a3fb6bf9cb3ca2116b\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:25.0.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\support-compat-25.0.0.aar\27c2bfa0a92e155139dce7ae4d69f52a\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:25.0.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\support-compat-25.0.0.aar\27c2bfa0a92e155139dce7ae4d69f52a\AndroidManifest.xml:21:5-23:58
-INJECTED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:25.0.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\design-25.0.0.aar\207d921392712dede58cee4e333c52c7\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Arturo\Documents\prueba\MobileApplications\Frontend-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Arturo\Documents\prueba\Frontend-master\app\src\main\AndroidManifest.xml
