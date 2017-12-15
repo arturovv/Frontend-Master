@@ -3,9 +3,6 @@ package com.example.proyecto.appproffrontend;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/**
- * Created by android on 7/05/17.
- */
 
 public class PersonaDAO {
 

@@ -1,9 +1,5 @@
 package com.example.proyecto.appproffrontend;
 
-/**
- * Created by android on 7/05/17.
- */
-
 public class PersonaVO {
 
     protected String nombreUsuario = null;
@@ -30,7 +26,7 @@ public class PersonaVO {
     public String getPassword() {
         return password;
     }
-    public void setPassword(String telefono) {
+    public void setPassword(String password) {
         this.password = password;
     }
 

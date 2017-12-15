@@ -36,7 +36,7 @@
             "outputFile": "C:\\Users\\Arturo\\Documents\\prueba2\\Frontend-Master\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v14\\values-v14.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Arturo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.0.0.aar\\54767324d864bf7d21e5419e88bbf1bc\\res\\values-v14\\values-v14.xml",
+                    "source": "C:\\Users\\Arturo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.2.0.aar\\d54dd250b4d34262f3eb15c9b9b7c784\\res\\values-v14\\values-v14.xml",
                     "from": {
                         "startLines": "2,7,8,9,15,21,22,23,24,25,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",

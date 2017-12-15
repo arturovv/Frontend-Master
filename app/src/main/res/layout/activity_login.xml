@@ -53,10 +53,10 @@
                 android:layout_height="wrap_content">
 
                 <AutoCompleteTextView
-                    android:id="@+id/login"
+                    android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/prompt_login"
+                    android:hint="Email"
                     android:inputType="textEmailAddress"
                     android:maxLines="1"
                     android:singleLine="true" />
@@ -71,41 +71,27 @@
                     android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/prompt_password"
-                    android:imeActionId="1"
-                    android:imeActionLabel="@string/action_sign_in_short"
-                    android:imeOptions="actionUnspecified"
+                    android:hint="Password"
                     android:inputType="textPassword"
                     android:maxLines="1"
                     android:singleLine="true" />
 
             </android.support.design.widget.TextInputLayout>
 
-            <LinearLayout android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+
 
                 <Button
-                    android:id="@+id/log_in_button_prof"
+                    android:id="@+id/log_in_button"
                     style="?android:textAppearanceSmall"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text="@string/action_log_in_prof"
+                    android:text="Iniciar sesión"
                     android:textStyle="bold"
-                    android:layout_marginRight="30sp"/>
+                    />
 
-                <Button
-                    android:id="@+id/log_in_button_alu"
-                    style="?android:textAppearanceSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:text="@string/action_log_in_alu"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="30sp"/>
 
-            </LinearLayout>
+
 
             <Button
                 android:id="@+id/register_button"

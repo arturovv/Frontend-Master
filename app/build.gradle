@@ -28,6 +28,7 @@ repositories {
 }
 
 dependencies {
+    implementation 'com.google.firebase:firebase-auth:11.0.4'
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
@@ -36,10 +37,13 @@ dependencies {
     //compile 'com.google.guava:guava:21.0'
 
 
-    compile 'com.android.support:appcompat-v7:25.0.0'
-    compile 'com.android.support:design:25.0.0'
-    compile 'com.android.support:support-vector-drawable:25.0.0'
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.android.support:design:25.2.0'
+    compile 'com.android.support:support-vector-drawable:25.2.0'
+    compile 'com.android.support:animated-vector-drawable:25.2.0'
+    compile 'com.android.support:support-core-ui:25.2.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
+    compile 'com.google.firebase:firebase-auth:11.0.4'
     compile 'org.mongodb:mongo-java-driver:3.4.2'
     compile 'com.googlecode.json-simple:json-simple:1.1'
     testCompile 'junit:junit:4.12'

@@ -3,13 +3,22 @@ package com.example.proyecto.appproffrontend;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Spinner;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -22,8 +31,10 @@ import java.util.ArrayList;
 
 public class Registro3 extends AppCompatActivity implements MultiSpinner.MultiSpinnerListener {
 
+    private static final String TAG = null;
     private String password;
-    private String user;
+    private String email;
+    private FirebaseUser user;
     private MultiSpinner horario;
     private MultiSpinner asignaturas;
     private MultiSpinner curso;
@@ -32,11 +43,14 @@ public class Registro3 extends AppCompatActivity implements MultiSpinner.MultiSp
     private API api;
     private JSONObject respuesta;
     private InfoSesion info;
+    private FirebaseAuth mAuth;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        user = getIntent().getExtras().getString("profesor_user");
+        mAuth = FirebaseAuth.getInstance();
+        email = getIntent().getExtras().getString("profesor_user");
         password = getIntent().getExtras().getString("profesor_psw");
         info = new InfoSesion(this);
 
@@ -52,12 +66,13 @@ public class Registro3 extends AppCompatActivity implements MultiSpinner.MultiSp
         final Intent i = new Intent(this, Perfil_Profesor.class);
         registro.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                final int code = guardarEnBd();
-                if (code == -1) {
-                    info.set(user,1);
-                    try {
-                        facade.login(new PersonaVO(user,password),1);
-                    } catch (APIexception ex) {}
+                int code = 10;
+                try {
+                    code = guardarEnBd();
+                } catch (APIexception apIexception) {
+                    apIexception.printStackTrace();
+                }
+                if (code == 0) {
                     startActivity(i);
                 }
                 else error(code);
@@ -67,7 +82,7 @@ public class Registro3 extends AppCompatActivity implements MultiSpinner.MultiSp
 
     }
 
-    private int guardarEnBd() {
+    private int guardarEnBd() throws APIexception {
         //Comprobar campos
         CheckBox tyc = (CheckBox) findViewById(R.id.TyC);
         ArrayList<String> horariosProf = horario.getValues();
@@ -83,13 +98,37 @@ public class Registro3 extends AppCompatActivity implements MultiSpinner.MultiSp
         else if (horariosProf.isEmpty()) return 1;
         else if (asignaturasProf.isEmpty()) return 2;
 
-        try {
-            return facade.registro_profesor(new ProfesorVO(
-                    user, password, getIntent().getExtras().getString("profesor_tlf"),
-                    getIntent().getExtras().getString("profesor_mail"),
-                    getIntent().getExtras().getString("profesor_ciu"),
-                    horariosProf,cursosProf,asignaturasProf,-1.00, exp, modulo));
-        } catch (APIexception ex) { respuesta = ex.json; return 10; }
+            mAuth.createUserWithEmailAndPassword(email, password)
+                    .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()) {
+                                // Sign in success, update UI with the signed-in user's information
+                                Log.d(TAG, "createUserWithEmail:success");
+                                user = mAuth.getCurrentUser();
+                            } else {
+                                // If sign in fails, display a message to the user.
+                                Log.w(TAG, "createUserWithEmail:failure", task.getException());
+                                Toast.makeText(Registro3.this, "An error has occurred.",
+                                        Toast.LENGTH_SHORT).show();
+                                user = null;
+                            }
+
+                            // [START_EXCLUDE]
+                            //hideProgressDialog();
+                            // [END_EXCLUDE]
+
+                        }
+                    });
+            if(user == null) return -1;
+            else {
+                try {
+                    return facade.registro_profesor(new ProfesorVO(email, password, getIntent().getExtras().getString("profesor_tlf"),
+                        getIntent().getExtras().getString("profesor_mail"),
+                        getIntent().getExtras().getString("profesor_ciu"),
+                        horariosProf,cursosProf,asignaturasProf,-1.00, exp, modulo));
+                    } catch (APIexception ex) { respuesta = ex.json; return 10; }
+            }
     }
 
     private void populateFields() {

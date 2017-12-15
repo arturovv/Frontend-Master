@@ -4,14 +4,14 @@
             "outputFile": "C:\\Users\\Arturo\\Documents\\prueba2\\Frontend-Master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Arturo\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.0.0.aar\\37b7106b845eedbccca7e2d95094d740\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\Arturo\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.2.0.aar\\35841d860a477f09c5943773b09f4682\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
                         "endLines": "4",
                         "endColumns": "12",
-                        "endOffsets": "244"
+                        "endOffsets": "248"
                     },
                     "to": {
                         "startLines": "287",
@@ -19,11 +19,11 @@
                         "startOffsets": "20967",
                         "endLines": "289",
                         "endColumns": "12",
-                        "endOffsets": "21156"
+                        "endOffsets": "21160"
                     }
                 },
                 {
-                    "source": "C:\\Users\\Arturo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.0.0.aar\\54767324d864bf7d21e5419e88bbf1bc\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\Arturo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.2.0.aar\\d54dd250b4d34262f3eb15c9b9b7c784\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,23,24,25,26,28,30,31,32,33,34,36,38,40,42,44,46,47,52,54,56,57,58,60,62,63,64,65,66,67,111,114,158,161,164,166,168,170,173,175,178,179,180,183,184,185,186,187,188,191,192,194,196,198,200,204,206,207,208,209,211,215,217,219,220,221,222,223,225,226,227,237,238,239,251,263,264,265,268,271,272,275,276,279,282",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
