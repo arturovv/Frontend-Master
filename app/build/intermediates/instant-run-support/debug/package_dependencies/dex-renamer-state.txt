@@ -1,4 +1,4 @@
-#Tue Dec 05 21:41:19 CET 2017
-base.0=C\:\\Users\\Arturo\\Documents\\prueba\\MobileApplications\\Frontend-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+#Wed Dec 13 19:17:39 CET 2017
+base.0=C\:\\Users\\Arturo\\Documents\\prueba2\\Frontend-Master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\35
 path.0=classes.dex
 renamed.0=classes.dex

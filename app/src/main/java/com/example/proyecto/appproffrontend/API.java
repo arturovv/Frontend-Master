@@ -21,7 +21,7 @@ import java.net.URL;
 public class API
 {
 	// Direccion base al backend
-    private String baseurl = new String("http://approf-approf.1d35.starter-us-east-1.openshiftapps.com");
+    private String baseurl = "http://approf-approf.1d35.starter-us-east-1.openshiftapps.com";
 
 	// Token de la app
 	private String token;
