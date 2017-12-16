@@ -47,6 +47,9 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        info = new InfoSesion(this);
+        api = new API(this);
+        facade = new Facade(api);
 
         mAuth = FirebaseAuth.getInstance();
         mAuth.signOut();
