@@ -1,4 +1,4 @@
-#Sat Dec 16 00:35:39 CET 2017
+#Sat Dec 16 17:21:41 CET 2017
 base.0=C\:\\Users\\Arturo\\Documents\\prueba2\\Frontend-Master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\43
 path.0=classes.dex
 renamed.0=classes.dex

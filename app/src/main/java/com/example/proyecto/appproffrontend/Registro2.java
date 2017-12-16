@@ -33,8 +33,8 @@ import org.json.JSONObject;
 public class Registro2 extends AppCompatActivity {
 
     private static final String TAG = null;
-    private String usrAl;
-    private String pswAl;
+    private String usr;
+    private String psw;
     private Facade facade;
     private EditText username;
     private EditText password;
@@ -43,14 +43,11 @@ public class Registro2 extends AppCompatActivity {
     private EditText experiencia;
     private EditText email;
     private EditText tlf;
-    private int prof;
-    private String user;
     private FirebaseAuth mAuth;
     private FirebaseUser ses_user;
     private Intent i = null;
 
     private API api;
-    private JSONObject respuesta;
     private InfoSesion info;
 
 
@@ -60,7 +57,7 @@ public class Registro2 extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
         info = new InfoSesion(this);
-        prof = info.getTipo();
+        int prof = info.getTipo();
         if (prof == 1) setContentView(R.layout.activity_registro2_profesor);
         else setContentView(R.layout.activity_registro2_alumno);
         username = (EditText) findViewById(R.id.userName);
@@ -96,9 +93,8 @@ public class Registro2 extends AppCompatActivity {
     }
 
     private int guardarEnBdProf(final Intent i) {
-        String usr = username.getText().toString();
-        user = usr;
-        String psw = password.getText().toString();
+        usr = username.getText().toString();
+        psw = password.getText().toString();
         String cpsw = confirmPassword.getText().toString();
         String mail = email.getText().toString();
         String phone = tlf.getText().toString();
@@ -124,8 +120,8 @@ public class Registro2 extends AppCompatActivity {
     }
 
     private int guardarEnBdAl() {
-        String usr = username.getText().toString();
-        String psw = password.getText().toString();
+        usr = username.getText().toString();
+        psw = password.getText().toString();
         if(!validateForm()) {
             findViewById(R.id.register).setVisibility(View.VISIBLE);
             return -1;
@@ -146,8 +142,15 @@ public class Registro2 extends AppCompatActivity {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "createUserWithEmail:success");
                             ses_user = mAuth.getCurrentUser();
-                            info.set(username.getText().toString(),0);
-                            startActivity(i);
+                            facade = new Facade(api);
+                            try {
+                                error = facade.registro_alumno(new AlumnoVO(usr, psw));
+                                info.set(username.getText().toString(),0);
+                                info.setSession(ses_user);
+                                facade.login(new PersonaVO(usr,psw),0);
+                                startActivity(i);
+                            } catch (APIexception ex) { error = 10; }
+
                         } else {
                             // If sign in fails, display a message to the user.
                             Exception e = task.getException();
@@ -175,6 +178,7 @@ public class Registro2 extends AppCompatActivity {
 
                     }
                 });
+
         return error;
     }
 

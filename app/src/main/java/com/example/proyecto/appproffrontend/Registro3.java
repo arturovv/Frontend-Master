@@ -44,13 +44,14 @@ public class Registro3 extends AppCompatActivity implements MultiSpinner.MultiSp
     private JSONObject respuesta;
     private InfoSesion info;
     private FirebaseAuth mAuth;
+    private Intent i;
 
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mAuth = FirebaseAuth.getInstance();
-        email = getIntent().getExtras().getString("profesor_user");
+        email = getIntent().getExtras().getString("profesor_mail");
         password = getIntent().getExtras().getString("profesor_psw");
         info = new InfoSesion(this);
 
@@ -63,19 +64,18 @@ public class Registro3 extends AppCompatActivity implements MultiSpinner.MultiSp
         modo = (Spinner) findViewById(R.id.modalidadProfesorReg);
         populateFields();
         Button registro = (Button) findViewById(R.id.registerbutton);
-        final Intent i = new Intent(this, Perfil_Profesor.class);
+        i = new Intent(this, Perfil_Profesor.class);
         registro.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                int code = 10;
+                findViewById(R.id.registerbutton).setVisibility(View.GONE);
+                int code = -1;
                 try {
                     code = guardarEnBd();
-                } catch (APIexception apIexception) {
-                    apIexception.printStackTrace();
+                } catch (APIexception apIexception) {code=10;}
+                if(code != -1) {
+                    findViewById(R.id.registerbutton).setVisibility(View.VISIBLE);
+                    error(code);
                 }
-                if (code == 0) {
-                    startActivity(i);
-                }
-                else error(code);
             }
         });
 
@@ -85,14 +85,18 @@ public class Registro3 extends AppCompatActivity implements MultiSpinner.MultiSp
     private int guardarEnBd() throws APIexception {
         //Comprobar campos
         CheckBox tyc = (CheckBox) findViewById(R.id.TyC);
-        ArrayList<String> horariosProf = horario.getValues();
-        ArrayList<String> asignaturasProf = asignaturas.getValues();
+        final ArrayList<String> horariosProf = horario.getValues();
+        final ArrayList<String> asignaturasProf = asignaturas.getValues();
 
-        String exp = getIntent().getExtras().getString("profesor_exp");
-        if(exp.equals("")) exp = null;
-        ArrayList<String> cursosProf = curso.getValues();
-        if(cursosProf.isEmpty()) cursosProf = null;
-        String modulo = modo.getSelectedItem().toString();
+        String expaux = getIntent().getExtras().getString("profesor_exp");
+        if(expaux.equals("")) expaux = null;
+        final String exp = expaux;
+
+        ArrayList<String> cursosProfaux = curso.getValues();
+        if(cursosProfaux.isEmpty()) cursosProfaux = null;
+        final ArrayList<String> cursosProf = cursosProfaux;
+
+        final String modulo = modo.getSelectedItem().toString();
 
         if (!tyc.isChecked()) return 8;
         else if (horariosProf.isEmpty()) return 1;
@@ -106,11 +110,23 @@ public class Registro3 extends AppCompatActivity implements MultiSpinner.MultiSp
                                 // Sign in success, update UI with the signed-in user's information
                                 Log.d(TAG, "createUserWithEmail:success");
                                 user = mAuth.getCurrentUser();
+                                try {
+                                    facade.registro_profesor(new ProfesorVO(email, password, getIntent().getExtras().getString("profesor_tlf"),
+                                            getIntent().getExtras().getString("profesor_user"),
+                                            getIntent().getExtras().getString("profesor_ciu"),
+                                            horariosProf,cursosProf,asignaturasProf,-1.00, exp, modulo));
+                                    info.set(email,1);
+                                    info.setSession(user);
+                                    facade.login(new PersonaVO(email,password),1);
+                                    startActivity(i);
+                                } catch (APIexception ex) { user = null; }
+
                             } else {
                                 // If sign in fails, display a message to the user.
                                 Log.w(TAG, "createUserWithEmail:failure", task.getException());
                                 Toast.makeText(Registro3.this, "An error has occurred.",
                                         Toast.LENGTH_SHORT).show();
+                                findViewById(R.id.registerbutton).setVisibility(View.VISIBLE);
                                 user = null;
                             }
 
@@ -120,15 +136,8 @@ public class Registro3 extends AppCompatActivity implements MultiSpinner.MultiSp
 
                         }
                     });
-            if(user == null) return -1;
-            else {
-                try {
-                    return facade.registro_profesor(new ProfesorVO(email, password, getIntent().getExtras().getString("profesor_tlf"),
-                        getIntent().getExtras().getString("profesor_mail"),
-                        getIntent().getExtras().getString("profesor_ciu"),
-                        horariosProf,cursosProf,asignaturasProf,-1.00, exp, modulo));
-                    } catch (APIexception ex) { respuesta = ex.json; return 10; }
-            }
+
+            return -1;
     }
 
     private void populateFields() {
@@ -162,9 +171,7 @@ public class Registro3 extends AppCompatActivity implements MultiSpinner.MultiSp
                 dlgAlert.setMessage("Acepte los terminos y condiciones");
                 break;
             case 10:
-                try {
-                    dlgAlert.setMessage("Error durante el registro: \n" + respuesta.getString("message"));
-                } catch (JSONException ex) {dlgAlert.setMessage("Error durante el registro:");}
+                    dlgAlert.setMessage("Error durante el registro.");
         }
         dlgAlert.setTitle("Error...");
         dlgAlert.setPositiveButton("OK", null);
