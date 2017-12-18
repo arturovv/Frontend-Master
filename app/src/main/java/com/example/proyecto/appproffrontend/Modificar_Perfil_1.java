@@ -89,7 +89,7 @@ public class Modificar_Perfil_1 extends AppCompatActivity implements MultiSpinne
         ArrayList<String> horariosProf = horarios.getValues();
         ArrayList<String> asignaturasProf = asignaturas.getValues();
         if (mail.isEmpty()) return 4;
-        else if (!mail.matches("[a-zA-Z0-9._-]+@[a-z]+\\.[a-z]+")) return 5;
+        //if (!mail.matches("[a-zA-Z0-9._-]+@[a-z]+\\.[a-z]+")) return 5;
         else if (phone.isEmpty()) return 6;
         else if (!phone.matches("[0-9]{9}")) return 7;
         else if (city.isEmpty()) return 9;
