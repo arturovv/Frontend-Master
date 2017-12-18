@@ -40,7 +40,7 @@
 
                 <TextView android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/usarioProfesor"
+                    android:text="Email"
                     android:fontFamily="sans-serif-medium"
                     android:textSize="20sp"/>
                 <TextView android:id="@+id/usuarioProfesorMod"
@@ -76,7 +76,7 @@
 
                 <TextView android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/emailProfesor"
+                    android:text="Nombre:"
                     android:fontFamily="sans-serif-medium"
                     android:textSize="20sp"/>
                 <EditText android:id="@+id/emailProfesorMod"
