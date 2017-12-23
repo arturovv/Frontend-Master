@@ -3,12 +3,15 @@ package com.example.proyecto.appproffrontend;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+//import android.app.AlertDialog.Builder;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 import org.json.JSONObject;
 
@@ -29,11 +32,18 @@ public class Modificar_Perfil_1 extends AppCompatActivity implements MultiSpinne
     private JSONObject respuesta;
     private InfoSesion sesion = null;
 
+    // codigo de adrian
+    private FirebaseAuth mAuth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_modificar__perfil_1);
+
+        // codigo anyadido por adrian
+        mAuth = FirebaseAuth.getInstance();
+        //stop anyadido
 
         siguienteButton = (Button) findViewById(R.id.siguienteMod);
 
@@ -69,6 +79,8 @@ public class Modificar_Perfil_1 extends AppCompatActivity implements MultiSpinne
         ciudad = (EditText) findViewById(R.id.ciudadProfesorMod);
         ciudad.setText(profesor.getCiudad());
 
+        // AQUI IRA LA INFORMACION DEL MAPA PARA MODIFICAR
+
         user = (TextView) findViewById(R.id.usuarioProfesorMod);
         user.setText(profesor.getNombreUsuario());
 
@@ -101,6 +113,9 @@ public class Modificar_Perfil_1 extends AppCompatActivity implements MultiSpinne
         i.putExtra("profesor_ciu", city);
         i.putExtra("profesor_hor", horariosProf);
         i.putExtra("profesor_asig", asignaturasProf);
+        // aqui ira la localizacion, algo asi:
+        //i.putExtra("profesor_long", asignaturasProf);
+        //i.putExtra("profesor_lat", asignaturasProf);
         return -1;
     }
 

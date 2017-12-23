@@ -1,42 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Arturo\\Documents\\prueba2\\Frontend-Master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v22\\values-v22.xml",
+            "outputFile": "C:\\Users\\Usuario\\AndroidStudioProjects\\Frontend-Master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v22\\values-v22.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Arturo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.2.0.aar\\d54dd250b4d34262f3eb15c9b9b7c784\\res\\values-v22\\values-v22.xml",
-                    "from": {
-                        "startLines": "2,3,4,9",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,130,217,553",
-                        "endLines": "2,3,8,13",
-                        "endColumns": "74,86,12,12",
-                        "endOffsets": "125,212,548,896"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\Arturo\\Documents\\prueba\\MobileApplications\\Frontend-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v22\\values-v22.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\Arturo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.0.0.aar\\5e9bceeb90605226ad88465647c291cc\\res\\values-v22\\values-v22.xml",
-                    "from": {
-                        "startLines": "2,3,4,9",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,130,217,553",
-                        "endLines": "2,3,8,13",
-                        "endColumns": "74,86,12,12",
-                        "endOffsets": "125,212,548,896"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\Arturo\\Documents\\prueba\\Frontend-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v22\\values-v22.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\Arturo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.0.0.aar\\5e9bceeb90605226ad88465647c291cc\\res\\values-v22\\values-v22.xml",
+                    "source": "C:\\Users\\Usuario\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.2.0.aar\\f49d9283df9a5a91c4bc41314d5a456e\\res\\values-v22\\values-v22.xml",
                     "from": {
                         "startLines": "2,3,4,9",
                         "startColumns": "4,4,4,4",

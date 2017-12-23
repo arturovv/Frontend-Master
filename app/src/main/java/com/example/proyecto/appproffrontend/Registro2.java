@@ -22,6 +22,8 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -50,6 +52,17 @@ public class Registro2 extends AppCompatActivity {
     private API api;
     private InfoSesion info;
 
+    // anyadido adrian
+    private EditText longit;
+    private EditText latit;
+    // stop anyadido
+
+    // BD firebase
+    FirebaseConections firebaseConections=new FirebaseConections();
+    DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
+
+
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -68,6 +81,8 @@ public class Registro2 extends AppCompatActivity {
             email = (EditText) findViewById(R.id.email);
             tlf = (EditText) findViewById(R.id.telefono);
             ciudad = (EditText) findViewById(R.id.ciudadProfesorReg);
+            longit = (EditText) findViewById(R.id.longitud);
+            latit = (EditText) findViewById(R.id.latitud);
             experiencia = (EditText) findViewById(R.id.experienciaProfesorReg);
             Button siguiente = (Button) findViewById(R.id.siguiente);
             i = new Intent(this, Registro3.class);
@@ -100,6 +115,12 @@ public class Registro2 extends AppCompatActivity {
         String phone = tlf.getText().toString();
         String city = ciudad.getText().toString();
         String experience = experiencia.getText().toString();
+
+        // anyadido adrian
+        String longitud=  longit.getText().toString();
+        String latitud= latit.getText().toString();
+        // stop anyadido
+
         if (usr.isEmpty()) return 0;
         else if (psw.isEmpty()) return 1;
         else if (cpsw.isEmpty()) return 2;
@@ -109,6 +130,8 @@ public class Registro2 extends AppCompatActivity {
         else if (phone.isEmpty()) return 6;
         else if (!phone.matches("[0-9]{9}")) return 7;
         else if (city.isEmpty()) return 9;
+        else if (longitud.isEmpty()) return 11;
+        else if (latitud.isEmpty()) return 12;
 
         i.putExtra("profesor_user", usr);
         i.putExtra("profesor_psw", psw);
@@ -116,6 +139,8 @@ public class Registro2 extends AppCompatActivity {
         i.putExtra("profesor_mail", mail);
         i.putExtra("profesor_ciu", city);
         i.putExtra("profesor_exp", experience);
+        i.putExtra("profesor_long",longitud);
+        i.putExtra("profesor_lat",latitud);
         return -1;
     }
 
@@ -142,6 +167,12 @@ public class Registro2 extends AppCompatActivity {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "createUserWithEmail:success");
                             ses_user = mAuth.getCurrentUser();
+
+                            // adrian code
+                            firebaseConections.writeNewUser(mAuth,usr);
+
+                            // finalitation adrian super code
+
                             facade = new Facade(api);
                             try {
                                 error = facade.registro_alumno(new AlumnoVO(usr, psw));
@@ -217,6 +248,12 @@ public class Registro2 extends AppCompatActivity {
                     dlgAlert.setMessage("Rellene el campo de Ciudad");
                 case 10:
                     dlgAlert.setMessage("Error durante el registro");
+                // anyadido adrian
+                case 11:
+                    dlgAlert.setMessage("Rellene campo de longitud");
+                case 12:
+                    dlgAlert.setMessage("Rellene campo de latitud");
+                // stop anyadido
                 default:
                     dlgAlert.setMessage("Error desconocido");
             }
@@ -265,4 +302,6 @@ public class Registro2 extends AppCompatActivity {
 
         return valid;
     }
+
+
 }

@@ -1,40 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Arturo\\Documents\\prueba\\MobileApplications\\Frontend-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es\\values-es.xml",
+            "outputFile": "C:\\Users\\Usuario\\AndroidStudioProjects\\Frontend-Master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es\\values-es.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Arturo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.0.0.aar\\5e9bceeb90605226ad88465647c291cc\\res\\values-es\\values-es.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,172,280,403,516,624,709,810,938,1014,1090,1172,1279,1379,1478,1586,1693,1800,1922,2022,2104",
-                        "endColumns": "116,107,122,112,107,84,100,127,75,75,81,106,99,98,107,106,106,121,99,81,100",
-                        "endOffsets": "167,275,398,511,619,704,805,933,1009,1085,1167,1274,1374,1473,1581,1688,1795,1917,2017,2099,2200"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\Arturo\\Documents\\prueba\\Frontend-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es\\values-es.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\Arturo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.0.0.aar\\5e9bceeb90605226ad88465647c291cc\\res\\values-es\\values-es.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,172,280,403,516,624,709,810,938,1014,1090,1172,1279,1379,1478,1586,1693,1800,1922,2022,2104",
-                        "endColumns": "116,107,122,112,107,84,100,127,75,75,81,106,99,98,107,106,106,121,99,81,100",
-                        "endOffsets": "167,275,398,511,619,704,805,933,1009,1085,1167,1274,1374,1473,1581,1688,1795,1917,2017,2099,2200"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\Arturo\\Documents\\prueba2\\Frontend-Master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es\\values-es.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\Arturo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.2.0.aar\\d54dd250b4d34262f3eb15c9b9b7c784\\res\\values-es\\values-es.xml",
+                    "source": "C:\\Users\\Usuario\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.2.0.aar\\f49d9283df9a5a91c4bc41314d5a456e\\res\\values-es\\values-es.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -51,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Arturo\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.0.4.aar\\85c1407d75ec1072f3cf44f7e1a6737c\\res\\values-es\\values.xml",
+                    "source": "C:\\Users\\Usuario\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.0.4.aar\\86daee2423697b7b77f0df491bcb20fb\\res\\values-es\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -68,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Arturo\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.0.4.aar\\29696bc44785fbb8ae6ac5581834d684\\res\\values-es\\values.xml",
+                    "source": "C:\\Users\\Usuario\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.0.4.aar\\b899844b874c8b25e310afa7656f72a7\\res\\values-es\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",

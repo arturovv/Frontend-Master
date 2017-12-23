@@ -10,6 +10,8 @@ import android.widget.RatingBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import org.json.JSONObject;
 
 public class Perfil_Profesor extends AppCompatActivity {
@@ -31,6 +33,8 @@ public class Perfil_Profesor extends AppCompatActivity {
     private Spinner cursos = null;
     private Spinner asignaturas = null;
     private API api;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

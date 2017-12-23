@@ -11,6 +11,10 @@ public class ProfesorVO extends PersonaVO implements Comparable<ProfesorVO>{
     private String telefono = null;
     private String mail = null;
     private String ciudad = null;
+    // anyadido
+    private String longitud=null;
+    private String latitud=null;
+    //acaba anyadido
     private ArrayList<String> horarios = null;
     private ArrayList<String> cursos = null;
     private ArrayList<String> asignaturas = null;
@@ -24,7 +28,7 @@ public class ProfesorVO extends PersonaVO implements Comparable<ProfesorVO>{
     public ProfesorVO (String nombreUsuario, String password, String telefono, String mail, String ciudad,
                        ArrayList<String> horarios, ArrayList<String> cursos,
                        ArrayList<String> asignaturas, Double valoracion, String experiencia,
-                       String modalidad) {
+                       String modalidad,String longitud,String latitud) {
 
         if (nombreUsuario != null) super.nombreUsuario = nombreUsuario;
         if (password != null) super.password = password;
@@ -37,13 +41,15 @@ public class ProfesorVO extends PersonaVO implements Comparable<ProfesorVO>{
         if (valoracion != -1.0f) this.valoracion = valoracion;
         if (experiencia != null) this.experiencia = experiencia;
         if (modalidad != null) this.modalidad = modalidad;
+        if (longitud != null) this.longitud = longitud;
+        if (latitud != null) this.latitud = latitud;
 
     }
 
     public ProfesorVO (String id, String nombreUsuario, String password, String telefono, String mail, String ciudad,
                        ArrayList<String> horarios, ArrayList<String> cursos,
                        ArrayList<String> asignaturas, Double valoracion, String experiencia,
-                       String modalidad) {
+                       String modalidad,String longitud,String latitud) {
 
         if (id != null) this.id = id;
         if (nombreUsuario != null) super.nombreUsuario = nombreUsuario;
@@ -57,6 +63,8 @@ public class ProfesorVO extends PersonaVO implements Comparable<ProfesorVO>{
         if (valoracion != -1.0f) this.valoracion = valoracion;
         if (experiencia != null) this.experiencia = experiencia;
         if (modalidad != null) this.modalidad = modalidad;
+        if (longitud != null) this.longitud = longitud;
+        if (latitud != null) this.latitud = latitud;
 
     }
 
@@ -197,6 +205,19 @@ public class ProfesorVO extends PersonaVO implements Comparable<ProfesorVO>{
     }
     public void setModalidad(String modalidad) {
         this.modalidad = modalidad;
+    }
+
+    public String getLongitud() {
+        return longitud;
+    }
+    public void setLongitud(String longitud) {
+        this.longitud = longitud;
+    }
+
+    public String getLatitud(){return latitud;};
+
+    public void setLatitud(String latitud) {
+        this.latitud = latitud;
     }
 
     public int getDiasPromocionRestante() {

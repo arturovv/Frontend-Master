@@ -19,6 +19,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -46,6 +48,9 @@ public class Registro3 extends AppCompatActivity implements MultiSpinner.MultiSp
     private FirebaseAuth mAuth;
     private Intent i;
 
+    // BD firebase
+    FirebaseConections firebaseConections=new FirebaseConections();
+    DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -110,11 +115,20 @@ public class Registro3 extends AppCompatActivity implements MultiSpinner.MultiSp
                                 // Sign in success, update UI with the signed-in user's information
                                 Log.d(TAG, "createUserWithEmail:success");
                                 user = mAuth.getCurrentUser();
+                                // adrian code
+
+                                firebaseConections.writeNewTeacherLocation(mAuth,email,getIntent().getExtras().getString("profesor_ciu"),
+                                        getIntent().getExtras().getString("profesor_long"),getIntent().getExtras().getString("profesor_lat"));
+
+                                // finalitation adrian super code
+
+
                                 try {
                                     facade.registro_profesor(new ProfesorVO(email, password, getIntent().getExtras().getString("profesor_tlf"),
                                             getIntent().getExtras().getString("profesor_user"),
                                             getIntent().getExtras().getString("profesor_ciu"),
-                                            horariosProf,cursosProf,asignaturasProf,-1.00, exp, modulo));
+                                            horariosProf,cursosProf,asignaturasProf,-1.00, exp, modulo,getIntent().getExtras().getString("profesor_long"),
+                                            getIntent().getExtras().getString("profesor_lat")));
                                     info.set(email,1);
                                     info.setSession(user);
                                     facade.login(new PersonaVO(email,password),1);

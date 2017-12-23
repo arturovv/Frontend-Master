@@ -45,7 +45,7 @@ public class ProfesorDAO {
             String modalidad = respuesta.getString("modalidad");
 
             ProfesorVO prof = new ProfesorVO(profesor, null, telefono, mail, ciudad, horarios, cursos,
-                    asignaturas, valoracion, experiencia, modalidad);
+                    asignaturas, valoracion, experiencia, modalidad,null,null);
 
             return prof;
 
@@ -101,7 +101,7 @@ public class ProfesorDAO {
             String modalidad = respuesta.getString("modalidad");
 
             ProfesorVO prof = new ProfesorVO(profesorID, profesor, null, telefono, mail, ciudad,
-                    horarios, cursos, asignaturas, valoracion, experiencia, modalidad);
+                    horarios, cursos, asignaturas, valoracion, experiencia, modalidad,null,null);
 
             return prof;
 

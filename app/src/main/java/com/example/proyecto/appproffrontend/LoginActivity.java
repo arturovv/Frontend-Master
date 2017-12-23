@@ -15,6 +15,7 @@ import android.widget.EditText;
  import android.widget.TextView;
 import android.widget.Toast;
 
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -23,12 +24,21 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 /**
  * A login screen that offers login via email/password.
  */
 public class LoginActivity extends AppCompatActivity {
 
+    // Nuevo codigo de Adrian
+    //FirebaseDatabase database= FirebaseDatabase.getInstance("Users");
+    //DatabaseReference myRef = database.getReference();
+
+
+
+    // Acaba nuevo codigo de Adrian
     private static final String TAG = null;
     // Instancia la api una vez en la clase
     API api;

@@ -12,6 +12,8 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -30,10 +32,18 @@ public class Modificar_Perfil_2 extends AppCompatActivity implements MultiSpinne
     private Button confirmarButton = null;
     private JSONObject respuesta;
 
+    // codigo de adrian
+    private FirebaseAuth mAuth;
+    FirebaseConections firebaseConections=new FirebaseConections();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_modificar__perfil_2);
+        // codigo anyadido por adrian
+        mAuth = FirebaseAuth.getInstance();
+        //stop anyadido
+
 
         confirmarButton = (Button) findViewById(R.id.confirmarMod);
         sesion = new InfoSesion(this);
@@ -89,6 +99,12 @@ public class Modificar_Perfil_2 extends AppCompatActivity implements MultiSpinne
         if (modulo.equals("---")) modulo = null;
         facade = new Facade(api);
         try {
+
+            // codigo de adrian prueba
+            firebaseConections.modifyTeacher(mAuth,getIntent().getExtras().getString("profesor_ciu"),
+                    getIntent().getExtras().getString("profesor_long"),getIntent().getExtras().getString("profesor_lat"));
+            // stop codigo prueba
+
             return facade.actualizar_profesor(new ProfesorVO(
                     profesor.getNombreUsuario(),
                     profesor.getPassword(),
@@ -100,7 +116,8 @@ public class Modificar_Perfil_2 extends AppCompatActivity implements MultiSpinne
                     getIntent().getExtras().getStringArrayList("profesor_asig"),
                     profesor.getValoracion(),
                     exp,
-                    modulo));
+                    modulo,getIntent().getExtras().getString("profesor_long"),
+                    getIntent().getExtras().getString("profesor_lat")));
         } catch (APIexception ex) {
             respuesta = ex.json;
             return 10;
