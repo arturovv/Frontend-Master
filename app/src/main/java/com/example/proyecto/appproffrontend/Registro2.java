@@ -1,5 +1,6 @@
 package com.example.proyecto.appproffrontend;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -85,6 +86,21 @@ public class Registro2 extends AppCompatActivity {
             latit = (EditText) findViewById(R.id.latitud);
             experiencia = (EditText) findViewById(R.id.experienciaProfesorReg);
             Button siguiente = (Button) findViewById(R.id.siguiente);
+            //debug username.setText(String.valueOf(info.getErrorRegProf()));
+            switch (this.getSharedPreferences("APPROF", Context.MODE_PRIVATE).getInt("error", 0)) {
+                case 1:
+                    email.setError("Invalid email.");
+                    this.getSharedPreferences("APPROF", Context.MODE_PRIVATE).edit().putInt("error", 0).apply();//reset error
+                    break;
+                case 2:
+                    email.setError("Email used before.");
+                    this.getSharedPreferences("APPROF", Context.MODE_PRIVATE).edit().putInt("error", 0).apply();//reset error
+                    break;
+                case 3:
+                    password.setError("Too weak.");
+                    confirmPassword.setError("Too weak.");
+                    this.getSharedPreferences("APPROF", Context.MODE_PRIVATE).edit().putInt("error", 0).apply();//reset error
+            }
             i = new Intent(this, Registro3.class);
             siguiente.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {

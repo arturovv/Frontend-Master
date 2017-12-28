@@ -15,7 +15,6 @@ public class InfoSesion {
     private String username;
     private int tipo;
     private FirebaseUser session;
-
     private SharedPreferences sharedPref;
 
     public InfoSesion (Activity contexto)
@@ -61,6 +60,7 @@ public class InfoSesion {
     {
         return this.tipo;
     }
+
 
     public void setSession(FirebaseUser ses)
     {

@@ -1,7 +1,9 @@
 package com.example.proyecto.appproffrontend;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
@@ -18,6 +20,9 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.FirebaseAuthUserCollisionException;
+import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -27,9 +32,6 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-/**
- * Created by Rubenbros on 14/04/2017.
- */
 
 public class Registro3 extends AppCompatActivity implements MultiSpinner.MultiSpinnerListener {
 
@@ -46,7 +48,8 @@ public class Registro3 extends AppCompatActivity implements MultiSpinner.MultiSp
     private JSONObject respuesta;
     private InfoSesion info;
     private FirebaseAuth mAuth;
-    private Intent i;
+    private Intent i, ActivityError;
+    private SharedPreferences sharedPref;
 
     // BD firebase
     FirebaseConections firebaseConections=new FirebaseConections();
@@ -59,6 +62,9 @@ public class Registro3 extends AppCompatActivity implements MultiSpinner.MultiSp
         email = getIntent().getExtras().getString("profesor_mail");
         password = getIntent().getExtras().getString("profesor_psw");
         info = new InfoSesion(this);
+        ActivityError = new Intent(this, Registro2.class);
+        sharedPref = this.getSharedPreferences("APPROF", Context.MODE_PRIVATE);
+
 
         api = new API(this);
         facade = new Facade(api);
@@ -137,11 +143,25 @@ public class Registro3 extends AppCompatActivity implements MultiSpinner.MultiSp
 
                             } else {
                                 // If sign in fails, display a message to the user.
-                                Log.w(TAG, "createUserWithEmail:failure", task.getException());
+                                Exception e = task.getException();
+                                Log.w(TAG, "createUserWithEmail:failure", e);
                                 Toast.makeText(Registro3.this, "An error has occurred.",
                                         Toast.LENGTH_SHORT).show();
                                 findViewById(R.id.registerbutton).setVisibility(View.VISIBLE);
                                 user = null;
+                                SharedPreferences.Editor editor = sharedPref.edit();
+
+                                try {
+                                    throw e;
+                                } catch(FirebaseAuthWeakPasswordException e1) {
+                                    editor.putInt("error", 3).apply();//Pass to weak
+                                } catch(FirebaseAuthInvalidCredentialsException e1) {
+                                    editor.putInt("error", 1).apply();//Invalid email
+                                } catch(FirebaseAuthUserCollisionException e1) {
+                                    editor.putInt("error", 2).apply();//email reused
+                                } catch(Exception e1) {
+                                }
+                                startActivity(ActivityError);
                             }
 
                             // [START_EXCLUDE]
