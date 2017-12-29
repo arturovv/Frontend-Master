@@ -72,8 +72,18 @@ public class Registro2 extends AppCompatActivity {
 
         info = new InfoSesion(this);
         int prof = info.getTipo();
+        api = new API(this);
+
         if (prof == 1) setContentView(R.layout.activity_registro2_profesor);
         else setContentView(R.layout.activity_registro2_alumno);
+
+        //code for google auth
+        FirebaseUser user = mAuth.getCurrentUser();
+        if(user != null) { //user already with firebase account but without old cloud account
+            if(prof == 0) onlySaveInOldCloud(user);
+            else updateUI(user);
+        }
+
         username = (EditText) findViewById(R.id.userName);
         password = (EditText) findViewById(R.id.password);
         confirmPassword = (EditText) findViewById(R.id.confirm);
@@ -120,13 +130,23 @@ public class Registro2 extends AppCompatActivity {
             });
         }
 
-        api = new API(this);
     }
 
     private int guardarEnBdProf(final Intent i) {
+
+        //code for google auth
+        String cpsw = "";
+        FirebaseUser user = mAuth.getCurrentUser();
+        if(user !=null) {
+            psw = "ZwgMAEioujBT4fZPAizP"; //PASSWORD IN OLD CLOUD FOR ALL GOOGLE-USERS
+            cpsw = "ZwgMAEioujBT4fZPAizP";
+
+        } else {
+            psw = password.getText().toString();
+            cpsw = confirmPassword.getText().toString();
+        }//end of code for google auth
+
         usr = username.getText().toString();
-        psw = password.getText().toString();
-        String cpsw = confirmPassword.getText().toString();
         String mail = email.getText().toString();
         String phone = tlf.getText().toString();
         String city = ciudad.getText().toString();
@@ -319,5 +339,45 @@ public class Registro2 extends AppCompatActivity {
         return valid;
     }
 
+    //code for google auth
+    private void onlySaveInOldCloud(FirebaseUser user) {
+        usr = user.getEmail();
+        psw = "ZwgMAEioujBT4fZPAizP"; //PASSWORD IN OLD CLOUD FOR ALL GOOGLE-USERS
+        firebaseConections.writeNewUser(mAuth, usr);
+        Intent i0 = new Intent(this, Busqueda_Profesores.class);
+        Intent error = new Intent(this, LoginActivity.class);
+
+        facade = new Facade(api);
+        try {
+            facade.registro_alumno(new AlumnoVO(user.getEmail(), psw));
+            info.set(usr, 0);
+            info.setSession(user);
+            facade.login(new PersonaVO(user.getEmail(), psw), 0);
+            startActivity(i0);
+        } catch (APIexception ex) {
+            Toast.makeText(Registro2.this, "Authentication failed.",
+                    Toast.LENGTH_SHORT).show();
+            startActivity(error);
+        } /*catch (Exception e) {
+            Toast.makeText(Registro2.this, "An error has occurred.",
+                    Toast.LENGTH_SHORT).show();
+            startActivity(error);
+        }*/
+    }
+
+    //code for google auth
+    private void updateUI(FirebaseUser user) {
+        //Profesor que ya tiene cuenta en firebase
+
+        password = (EditText) findViewById(R.id.password);
+        confirmPassword = (EditText) findViewById(R.id.confirm);
+        email = (EditText) findViewById(R.id.email);
+        email.setText(user.getEmail());
+        email.setFocusable(false);
+        password.setVisibility(View.GONE);
+        confirmPassword.setVisibility(View.GONE);
+
+
+    }
 
 }

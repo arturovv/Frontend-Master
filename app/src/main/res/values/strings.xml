@@ -4,11 +4,10 @@
     <!-- Strings related to login -->
     <string name="prompt_login">Login</string>
     <string name="prompt_password">Password</string>
-    <string name="action_log_in">Iniciar sesión</string>
-    <string name="action_log_in_prof">Iniciar Profesor</string>
-    <string name="action_log_in_alu"> Iniciar  Alumno</string>
+    <string name="action_log_in">Log in</string>
 
-    <string name="action_register">Registrarse</string>
+
+    <string name="action_register">Email sign up</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="error_invalid_email">This email address is invalid</string>
     <string name="error_invalid_password">This password is too short</string>

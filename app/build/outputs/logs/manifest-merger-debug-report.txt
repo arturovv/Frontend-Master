@@ -5,17 +5,19 @@ INJECTED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\And
 INJECTED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:2:1-82:12
 INJECTED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:2:1-82:12
 MERGED from [com.google.firebase:firebase-database:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-database-11.0.4.aar\36c28ff5d0ebff3f54a9f5b393ddc128\AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\5426a8ad1f77df6163b3efad8344545b\AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\0abd21fed9510846b6af78f4513e72d2\AndroidManifest.xml:16:1-26:12
 MERGED from [com.android.support:design:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\35841d860a477f09c5943773b09f4682\AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.2.0.aar\d54dd250b4d34262f3eb15c9b9b7c784\AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.2.0.aar\50dcd2fa68e21a85dff6dc20c7644067\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\55ed7875854ff05734cd072a4cb01ebc\AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\5426a8ad1f77df6163b3efad8344545b\AndroidManifest.xml:16:1-21:12
 MERGED from [com.google.firebase:firebase-database-connection:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.0.4.aar\78589d58cc3686c024fb89b0f884cafb\AndroidManifest.xml:2:1-4:12
 MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\f466b4438146a691a8e8411cc858b4f0\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\461d2167158556a3adf9689471e721c8\AndroidManifest.xml:16:1-35:12
 MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\c00233a8e40ce68a4f1002b91403dafb\AndroidManifest.xml:16:1-29:12
 MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\c7dbf290a7672e59620c6498bd65ddde\AndroidManifest.xml:16:1-50:12
 MERGED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\628e3bf14732e48f83fb8dbc50d4b482\AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-auth-base:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.0.4.aar\75f9a69eb18a476da9daa10375b1546c\AndroidManifest.xml:2:1-5:12
 MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\29696bc44785fbb8ae6ac5581834d684\AndroidManifest.xml:16:1-21:12
 MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.4.aar\67e6eab687a646fb93209df8f41d6439\AndroidManifest.xml:2:1-5:12
 MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.4.aar\85c1407d75ec1072f3cf44f7e1a6737c\AndroidManifest.xml:16:1-23:12
@@ -69,6 +71,10 @@ MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Arturo\.gradle\ca
 		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:9:22-64
 application
 ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:11:5-80:19
+MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\5426a8ad1f77df6163b3efad8344545b\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\5426a8ad1f77df6163b3efad8344545b\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\0abd21fed9510846b6af78f4513e72d2\AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\0abd21fed9510846b6af78f4513e72d2\AndroidManifest.xml:19:5-25:19
 MERGED from [com.android.support:design:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\35841d860a477f09c5943773b09f4682\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:design:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\35841d860a477f09c5943773b09f4682\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.2.0.aar\d54dd250b4d34262f3eb15c9b9b7c784\AndroidManifest.xml:25:5-20
@@ -77,8 +83,6 @@ MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\Artur
 MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.2.0.aar\50dcd2fa68e21a85dff6dc20c7644067\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\55ed7875854ff05734cd072a4cb01ebc\AndroidManifest.xml:23:5-20
 MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\55ed7875854ff05734cd072a4cb01ebc\AndroidManifest.xml:23:5-20
-MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\5426a8ad1f77df6163b3efad8344545b\AndroidManifest.xml:19:5-20:19
-MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\5426a8ad1f77df6163b3efad8344545b\AndroidManifest.xml:19:5-20:19
 MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\f466b4438146a691a8e8411cc858b4f0\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\f466b4438146a691a8e8411cc858b4f0\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\461d2167158556a3adf9689471e721c8\AndroidManifest.xml:24:5-34:19
@@ -241,6 +245,10 @@ INJECTED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\And
 INJECTED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml
 MERGED from [com.google.firebase:firebase-database:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-database-11.0.4.aar\36c28ff5d0ebff3f54a9f5b393ddc128\AndroidManifest.xml:3:5-43
 MERGED from [com.google.firebase:firebase-database:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-database-11.0.4.aar\36c28ff5d0ebff3f54a9f5b393ddc128\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\5426a8ad1f77df6163b3efad8344545b\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\5426a8ad1f77df6163b3efad8344545b\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\0abd21fed9510846b6af78f4513e72d2\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\0abd21fed9510846b6af78f4513e72d2\AndroidManifest.xml:17:5-43
 MERGED from [com.android.support:design:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\35841d860a477f09c5943773b09f4682\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:design:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\35841d860a477f09c5943773b09f4682\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.2.0.aar\d54dd250b4d34262f3eb15c9b9b7c784\AndroidManifest.xml:21:5-23:78
@@ -249,8 +257,6 @@ MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\Artur
 MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.2.0.aar\50dcd2fa68e21a85dff6dc20c7644067\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\55ed7875854ff05734cd072a4cb01ebc\AndroidManifest.xml:21:5-43
 MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\55ed7875854ff05734cd072a4cb01ebc\AndroidManifest.xml:21:5-43
-MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\5426a8ad1f77df6163b3efad8344545b\AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\5426a8ad1f77df6163b3efad8344545b\AndroidManifest.xml:17:5-43
 MERGED from [com.google.firebase:firebase-database-connection:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.0.4.aar\78589d58cc3686c024fb89b0f884cafb\AndroidManifest.xml:3:5-43
 MERGED from [com.google.firebase:firebase-database-connection:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.0.4.aar\78589d58cc3686c024fb89b0f884cafb\AndroidManifest.xml:3:5-43
 MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\f466b4438146a691a8e8411cc858b4f0\AndroidManifest.xml:4:5-43
@@ -263,6 +269,8 @@ MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Arturo\.gradle\ca
 MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\c7dbf290a7672e59620c6498bd65ddde\AndroidManifest.xml:17:5-43
 MERGED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\628e3bf14732e48f83fb8dbc50d4b482\AndroidManifest.xml:3:5-43
 MERGED from [com.google.firebase:firebase-common:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-common-11.0.4.aar\628e3bf14732e48f83fb8dbc50d4b482\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.0.4.aar\75f9a69eb18a476da9daa10375b1546c\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.0.4.aar\75f9a69eb18a476da9daa10375b1546c\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\29696bc44785fbb8ae6ac5581834d684\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.4.aar\29696bc44785fbb8ae6ac5581834d684\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.4.aar\67e6eab687a646fb93209df8f41d6439\AndroidManifest.xml:3:5-43
@@ -299,6 +307,24 @@ INJECTED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\And
 		INJECTED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\0abd21fed9510846b6af78f4513e72d2\AndroidManifest.xml:20:9-189
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\0abd21fed9510846b6af78f4513e72d2\AndroidManifest.xml:20:129-162
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\0abd21fed9510846b6af78f4513e72d2\AndroidManifest.xml:20:163-187
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\0abd21fed9510846b6af78f4513e72d2\AndroidManifest.xml:20:69-128
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\0abd21fed9510846b6af78f4513e72d2\AndroidManifest.xml:20:19-68
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\0abd21fed9510846b6af78f4513e72d2\AndroidManifest.xml:24:9-184
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\0abd21fed9510846b6af78f4513e72d2\AndroidManifest.xml:24:64-87
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\0abd21fed9510846b6af78f4513e72d2\AndroidManifest.xml:24:88-182
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\0abd21fed9510846b6af78f4513e72d2\AndroidManifest.xml:24:18-63
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\461d2167158556a3adf9689471e721c8\AndroidManifest.xml:21:5-78
 MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\c00233a8e40ce68a4f1002b91403dafb\AndroidManifest.xml:21:5-78

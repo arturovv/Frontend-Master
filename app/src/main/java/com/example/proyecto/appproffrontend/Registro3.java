@@ -113,6 +113,7 @@ public class Registro3 extends AppCompatActivity implements MultiSpinner.MultiSp
         else if (horariosProf.isEmpty()) return 1;
         else if (asignaturasProf.isEmpty()) return 2;
 
+        if(mAuth.getCurrentUser() == null) {//google auth comprobation
             mAuth.createUserWithEmailAndPassword(email, password)
                     .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                         @Override
@@ -123,8 +124,8 @@ public class Registro3 extends AppCompatActivity implements MultiSpinner.MultiSp
                                 user = mAuth.getCurrentUser();
                                 // adrian code
 
-                                firebaseConections.writeNewTeacherLocation(mAuth,email,getIntent().getExtras().getString("profesor_ciu"),
-                                        getIntent().getExtras().getString("profesor_long"),getIntent().getExtras().getString("profesor_lat"));
+                                firebaseConections.writeNewTeacherLocation(mAuth, email, getIntent().getExtras().getString("profesor_ciu"),
+                                        getIntent().getExtras().getString("profesor_long"), getIntent().getExtras().getString("profesor_lat"));
 
                                 // finalitation adrian super code
 
@@ -133,13 +134,15 @@ public class Registro3 extends AppCompatActivity implements MultiSpinner.MultiSp
                                     facade.registro_profesor(new ProfesorVO(email, password, getIntent().getExtras().getString("profesor_tlf"),
                                             getIntent().getExtras().getString("profesor_user"),
                                             getIntent().getExtras().getString("profesor_ciu"),
-                                            horariosProf,cursosProf,asignaturasProf,-1.00, exp, modulo,getIntent().getExtras().getString("profesor_long"),
+                                            horariosProf, cursosProf, asignaturasProf, -1.00, exp, modulo, getIntent().getExtras().getString("profesor_long"),
                                             getIntent().getExtras().getString("profesor_lat")));
-                                    info.set(email,1);
+                                    info.set(email, 1);
                                     info.setSession(user);
-                                    facade.login(new PersonaVO(email,password),1);
+                                    facade.login(new PersonaVO(email, password), 1);
                                     startActivity(i);
-                                } catch (APIexception ex) { user = null; }
+                                } catch (APIexception ex) {
+                                    user = null;
+                                }
 
                             } else {
                                 // If sign in fails, display a message to the user.
@@ -153,13 +156,13 @@ public class Registro3 extends AppCompatActivity implements MultiSpinner.MultiSp
 
                                 try {
                                     throw e;
-                                } catch(FirebaseAuthWeakPasswordException e1) {
+                                } catch (FirebaseAuthWeakPasswordException e1) {
                                     editor.putInt("error", 3).apply();//Pass to weak
-                                } catch(FirebaseAuthInvalidCredentialsException e1) {
+                                } catch (FirebaseAuthInvalidCredentialsException e1) {
                                     editor.putInt("error", 1).apply();//Invalid email
-                                } catch(FirebaseAuthUserCollisionException e1) {
+                                } catch (FirebaseAuthUserCollisionException e1) {
                                     editor.putInt("error", 2).apply();//email reused
-                                } catch(Exception e1) {
+                                } catch (Exception e1) {
                                 }
                                 startActivity(ActivityError);
                             }
@@ -170,6 +173,32 @@ public class Registro3 extends AppCompatActivity implements MultiSpinner.MultiSp
 
                         }
                     });
+
+        } else {//code for google auth
+            user = mAuth.getCurrentUser();
+
+            // adrian code
+            firebaseConections.writeNewTeacherLocation(mAuth, email, getIntent().getExtras().getString("profesor_ciu"),
+                    getIntent().getExtras().getString("profesor_long"), getIntent().getExtras().getString("profesor_lat"));
+            // finalitation adrian super code
+
+            try {
+                facade.registro_profesor(new ProfesorVO(email, password, getIntent().getExtras().getString("profesor_tlf"),
+                        getIntent().getExtras().getString("profesor_user"),
+                        getIntent().getExtras().getString("profesor_ciu"),
+                        horariosProf, cursosProf, asignaturasProf, -1.00, exp, modulo, getIntent().getExtras().getString("profesor_long"),
+                        getIntent().getExtras().getString("profesor_lat")));
+                info.set(email, 1);
+                info.setSession(user);
+                facade.login(new PersonaVO(email, password), 1);
+                startActivity(i);
+            } catch (APIexception ex) {
+                Toast.makeText(Registro3.this, "Authentication failed.",
+                        Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, LoginActivity.class));
+            }
+
+        }
 
             return -1;
     }
