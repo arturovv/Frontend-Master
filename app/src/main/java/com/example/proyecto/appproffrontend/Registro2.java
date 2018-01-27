@@ -141,6 +141,7 @@ public class Registro2 extends AppCompatActivity {
                 public void onClick(View view) {
                     Toast.makeText(Registro2.this, "Searching...",
                             Toast.LENGTH_SHORT).show();
+                    ciudad.setText("");
                     getLocation();
                 }
             });

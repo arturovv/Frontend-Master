@@ -119,4 +119,9 @@ public class Perfil_Profesor extends AppCompatActivity {
             asignaturas.setAdapter(adapter);
         }
     }
+    @Override
+    public void onBackPressed() {
+        Intent i = new Intent(this, LoginActivity.class);
+        startActivity(i);
+    }
 }

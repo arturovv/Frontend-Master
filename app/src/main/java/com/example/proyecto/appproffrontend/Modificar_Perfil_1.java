@@ -88,6 +88,7 @@ public class Modificar_Perfil_1 extends AppCompatActivity implements MultiSpinne
             public void onClick(View view) {
                 Toast.makeText(Modificar_Perfil_1.this, "Searching...",
                         Toast.LENGTH_SHORT).show();
+                ciudad.setText("");
                 getLocation();
             }
         });

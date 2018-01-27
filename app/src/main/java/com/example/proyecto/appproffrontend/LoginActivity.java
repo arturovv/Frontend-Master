@@ -135,17 +135,6 @@ public class LoginActivity extends AppCompatActivity {
                 .requestEmail()
                 .build();
 
-        /*logout if session is open
-        Auth.GoogleSignInApi.signOut(mGoogleApiClient).setResultCallback(
-                new ResultCallback<Status>() {
-                    @Override
-                    public void onResult(Status status) {
-                        Toast.makeText(LoginActivity.this, "Expired session.",
-                                Toast.LENGTH_SHORT).show();
-                    }
-                });;
-          */
-
         mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .enableAutoManage(this, new GoogleApiClient.OnConnectionFailedListener() {
                     @Override
@@ -165,26 +154,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        //mAuth = FirebaseAuth.getInstance();
-        /*mAuthListener = new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                FirebaseUser user = firebaseAuth.getCurrentUser();
-                googleSignInButton.setVisibility(View.GONE);
-                mEmailSignInButtonProf.setVisibility(View.GONE);
-                mRegisterButton.setVisibility(View.GONE);
-
-                if (user != null) {
-                    // User is signed in
-                    Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
-                    Toast.makeText(LoginActivity.this, "Authenticated.",
-                            Toast.LENGTH_SHORT).show();
-                    mEmailView.setText("HI " + user.getDisplayName().toString());
-                    mPasswordView.setText(user.getEmail().toString());
-
-                }
-            }
-        };*/
         //end of code for google auth
 
     }

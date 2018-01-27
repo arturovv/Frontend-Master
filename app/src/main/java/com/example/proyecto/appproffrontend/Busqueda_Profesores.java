@@ -131,4 +131,10 @@ public class Busqueda_Profesores extends AppCompatActivity implements MultiSpinn
     public void onItemsSelected(boolean[] selected) {
 
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent i = new Intent(this, LoginActivity.class);
+        startActivity(i);
+    }
 }
