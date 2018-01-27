@@ -95,8 +95,8 @@ public class Ver_Profesor extends AppCompatActivity {
         //google maps code
         mAuth = FirebaseAuth.getInstance();
 
-        //EN PRINCIPIO, AQUI TE DEJO LA IDENTIFICACION DEL USER (EL ID CON EL QUE SE CREA EL ARBOL EN LA BD)
-        String idUser = mAuth.getCurrentUser().getUid(); //puedes buscar por esto y luego obtener los hijos latitud y longitud
+        //AQUI TE DEJO EL EMAIL DEL PROFESOR LISTADO, ES CLAVE UNICA, NO SE REPITE EN LA BD
+        String email =  profesor.getNombreUsuario(); //puedes buscar por esto y luego obtener la latitud y longitud
 
         //*implementar busqueda*
 
