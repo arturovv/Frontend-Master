@@ -78,5 +78,6 @@
         <item>Barrabin Barrabash</item>
         <item>Profesor ejemplo</item>
     </string-array>
+    <string name="title_activity_maps">Map</string>
 
 </resources>

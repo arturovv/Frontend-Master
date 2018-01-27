@@ -3,8 +3,15 @@ package com.example.proyecto.appproffrontend;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.location.Address;
+import android.location.Geocoder;
+import android.location.Location;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
@@ -15,7 +22,10 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -28,6 +38,9 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.List;
+import java.util.Locale;
 
 /**
  * Created by Rubenbros on 14/04/2017.
@@ -62,7 +75,9 @@ public class Registro2 extends AppCompatActivity {
     FirebaseConections firebaseConections=new FirebaseConections();
     DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
 
-
+    //google maps code
+    private FusedLocationProviderClient mFusedLocationClient;
+    private int LOCATION_REQUEST_CODE;
 
 
     @Override
@@ -119,12 +134,26 @@ public class Registro2 extends AppCompatActivity {
                     else error(code);
                 }
             });
+
+            //google maps code
+            mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
+            ((Button) findViewById(R.id.btnLocation)).setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    Toast.makeText(Registro2.this, "Searching...",
+                            Toast.LENGTH_SHORT).show();
+                    getLocation();
+                }
+            });
+
+
         } else {
             Button registro = (Button) findViewById(R.id.register);
             i = new Intent(this, Busqueda_Profesores.class);
             registro.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
                     findViewById(R.id.register).setVisibility(View.GONE);
+                    Toast.makeText(Registro2.this, "Loading...",
+                            Toast.LENGTH_SHORT).show();
                     error(guardarEnBdAl());
                 }
             });
@@ -281,14 +310,14 @@ public class Registro2 extends AppCompatActivity {
                     dlgAlert.setMessage("Acepte los terminos y condiciones");
                     break;
                 case 9:
-                    dlgAlert.setMessage("Rellene el campo de Ciudad");
+                    dlgAlert.setMessage("Error with Location. Try again.");
                 case 10:
                     dlgAlert.setMessage("Error durante el registro");
                 // anyadido adrian
                 case 11:
-                    dlgAlert.setMessage("Rellene campo de longitud");
+                    dlgAlert.setMessage("Error with Location. Try again.");
                 case 12:
-                    dlgAlert.setMessage("Rellene campo de latitud");
+                    dlgAlert.setMessage("Error with Location. Try again.");
                 // stop anyadido
                 default:
                     dlgAlert.setMessage("Error desconocido");
@@ -378,6 +407,64 @@ public class Registro2 extends AppCompatActivity {
         confirmPassword.setVisibility(View.GONE);
 
 
+    }
+
+    //code for google maps
+    private void getLocation() {
+        try {
+
+            if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION)
+                    == PackageManager.PERMISSION_GRANTED) {
+
+                mFusedLocationClient.getLastLocation()
+                        .addOnSuccessListener(Registro2.this, new OnSuccessListener<Location>() {
+                            @Override
+                            public void onSuccess(Location location) {
+                                // Got last known location. In some rare situations this can be null.
+                                if (location != null) {
+                                    // Logic to handle location object
+
+                                    double lon = location.getLongitude();
+                                    double lat = location.getLatitude();
+
+                                    longit.setText(String.valueOf(lon));
+                                    latit.setText(String.valueOf(lat));
+
+                                    Geocoder gcd = new Geocoder(Registro2.this, Locale.getDefault());
+                                    try {
+                                        List<Address> addresses = gcd.getFromLocation(lat, lon, 1);
+                                        if (addresses != null && addresses.size() > 0) {
+                                            ciudad.setText(addresses.get(0).getLocality());
+                                        } else {
+                                            Toast.makeText(Registro2.this, "No addresses found. Try again.", Toast.LENGTH_LONG).show();
+                                        }
+
+                                    }catch (Exception e) {
+                                        Toast.makeText(Registro2.this, "Something went wrong. Try again.", Toast.LENGTH_LONG).show();
+                                    }
+
+
+                                } else {
+                                    Toast.makeText(Registro2.this, "Error. Active Location Services and try again.", Toast.LENGTH_LONG).show();
+                                }
+                            }
+                        });
+
+            } else {
+                    // Solicitar permiso
+                    ActivityCompat.requestPermissions(
+                            this,
+                            new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION},
+                            LOCATION_REQUEST_CODE);
+            }
+
+        } catch (SecurityException e) {
+            Toast.makeText(Registro2.this, "Permission error. Active Location Services and try again.", Toast.LENGTH_LONG).show();
+        } catch (Exception e) {
+            Toast.makeText(Registro2.this, "Permission error. Active Location Services and try again.", Toast.LENGTH_LONG).show();
+        }
+
+        ((Button) findViewById(R.id.btnLocation)).setText("TRY AGAIN");
     }
 
 }

@@ -388,7 +388,10 @@ public class LoginActivity extends AppCompatActivity {
         if(!googleAttempt) {
             if (mAuth.getCurrentUser() != null) updateUI(2);
             else updateUI(1);
-        } else googleAttempt = false;
+        } else {
+            Toast.makeText(LoginActivity.this, "Loading...",
+                Toast.LENGTH_SHORT).show();
+            googleAttempt = false;}
     }
 
     private void logout() {

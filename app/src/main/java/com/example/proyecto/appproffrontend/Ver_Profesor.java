@@ -1,7 +1,10 @@
 package com.example.proyecto.appproffrontend;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -13,10 +16,13 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+
 
 
 public class Ver_Profesor extends AppCompatActivity {
@@ -51,6 +57,12 @@ public class Ver_Profesor extends AppCompatActivity {
 
     private InfoSesion info;
 
+    //for google maps
+    private SharedPreferences sharedPref;
+    private FirebaseAuth mAuth;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,7 +79,9 @@ public class Ver_Profesor extends AppCompatActivity {
         try {
             profesor = facade.verProfesor(buscarProfesor);
             populateFields();
-        } catch (APIexception ex) { respuesta = ex.json; }
+        } catch (APIexception ex) {
+            respuesta = ex.json;
+        }
 
         populateFields();
 
@@ -76,6 +90,31 @@ public class Ver_Profesor extends AppCompatActivity {
         addListenerOnButtonValoracion();
         // Listener botón de profesor favorito
         addListenerOnButtonProfFavorito();
+
+
+        //google maps code
+        mAuth = FirebaseAuth.getInstance();
+
+        //EN PRINCIPIO, AQUI TE DEJO LA IDENTIFICACION DEL USER (EL ID CON EL QUE SE CREA EL ARBOL EN LA BD)
+        String idUser = mAuth.getCurrentUser().getUid(); //puedes buscar por esto y luego obtener los hijos latitud y longitud
+
+        //*implementar busqueda*
+
+
+        //strings!!!
+        final String lat = "39.4757192"; //LATITUD: COMPLETAR CON LOS RESULTADOS DE LA BUSQUEDA EN FIREBASE
+        final String lon = "-0.4258722"; //LONGITUD: COMPLETAR CON LOS RESULTADOS DE LA BUSQUEDA EN FIREBASE
+
+        final Intent i = new Intent(this, MapsActivity.class);
+        sharedPref = this.getSharedPreferences("APPROF", Context.MODE_PRIVATE);
+        ((Button) findViewById(R.id.btnMaps)).setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                SharedPreferences.Editor editor = sharedPref.edit();
+                editor.putString("lat", lat).apply();
+                editor.putString("lon", lon).apply();
+                startActivity(i);
+            }
+        });
 
     }
 

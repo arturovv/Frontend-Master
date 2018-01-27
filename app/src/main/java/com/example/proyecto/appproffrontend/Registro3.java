@@ -79,6 +79,8 @@ public class Registro3 extends AppCompatActivity implements MultiSpinner.MultiSp
         registro.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 findViewById(R.id.registerbutton).setVisibility(View.GONE);
+                Toast.makeText(Registro3.this, "Loading...",
+                        Toast.LENGTH_SHORT).show();
                 int code = -1;
                 try {
                     code = guardarEnBd();

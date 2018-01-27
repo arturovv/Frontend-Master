@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:2:1-82:12
-INJECTED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:2:1-82:12
-INJECTED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:2:1-82:12
-INJECTED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:2:1-82:12
+ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:2:1-85:12
+INJECTED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:2:1-85:12
+INJECTED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:2:1-85:12
+INJECTED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:2:1-85:12
 MERGED from [com.google.firebase:firebase-database:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-database-11.0.4.aar\36c28ff5d0ebff3f54a9f5b393ddc128\AndroidManifest.xml:2:1-4:12
 MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\5426a8ad1f77df6163b3efad8344545b\AndroidManifest.xml:16:1-21:12
 MERGED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\0abd21fed9510846b6af78f4513e72d2\AndroidManifest.xml:16:1-26:12
@@ -11,6 +11,8 @@ MERGED from [com.android.support:design:25.2.0] C:\Users\Arturo\.gradle\caches\t
 MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.2.0.aar\d54dd250b4d34262f3eb15c9b9b7c784\AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.2.0.aar\50dcd2fa68e21a85dff6dc20c7644067\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\55ed7875854ff05734cd072a4cb01ebc\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-location:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-location-11.0.4.aar\7e32fc4fa436c17a8755b2e70023f548\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.0.4.aar\fe7b44849ad6bc5c54797918edc22452\AndroidManifest.xml:16:1-25:12
 MERGED from [com.google.firebase:firebase-database-connection:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.0.4.aar\78589d58cc3686c024fb89b0f884cafb\AndroidManifest.xml:2:1-4:12
 MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\f466b4438146a691a8e8411cc858b4f0\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\461d2167158556a3adf9689471e721c8\AndroidManifest.xml:16:1-35:12
@@ -30,20 +32,20 @@ MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha7] C:\U
 MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\94e1d6908158ba92cbf70dc944a34644\AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\fd6960c50275d0eea0f1dfd7633c2475\AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\21145fd94c5b1e492e5d0b2a234aa67f\AndroidManifest.xml:17:1-27:12
-INJECTED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:2:1-82:12
-INJECTED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:2:1-82:12
-INJECTED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:2:1-82:12
+INJECTED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:2:1-85:12
+INJECTED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:2:1-85:12
+INJECTED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:2:1-85:12
 	package
 		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:3:5-51
 		INJECTED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:2:1-82:12
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:2:1-85:12
 		INJECTED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:2:1-82:12
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:2:1-85:12
 		INJECTED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:2:11-69
@@ -60,7 +62,9 @@ ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\Androi
 	android:name
 		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:8:22-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:9:5-83
+ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:9:5-67
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.0.4.aar\fe7b44849ad6bc5c54797918edc22452\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.0.4.aar\fe7b44849ad6bc5c54797918edc22452\AndroidManifest.xml:20:5-66
 MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\461d2167158556a3adf9689471e721c8\AndroidManifest.xml:20:5-66
 MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\461d2167158556a3adf9689471e721c8\AndroidManifest.xml:20:5-66
 MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\c00233a8e40ce68a4f1002b91403dafb\AndroidManifest.xml:20:5-66
@@ -69,8 +73,12 @@ MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Arturo\.gradle\ca
 MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\c7dbf290a7672e59620c6498bd65ddde\AndroidManifest.xml:20:5-66
 	android:name
 		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:9:22-64
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:10:22-76
 application
-ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:11:5-80:19
+ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:12:5-83:19
 MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\5426a8ad1f77df6163b3efad8344545b\AndroidManifest.xml:19:5-20:19
 MERGED from [com.google.firebase:firebase-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.0.4.aar\5426a8ad1f77df6163b3efad8344545b\AndroidManifest.xml:19:5-20:19
 MERGED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\0abd21fed9510846b6af78f4513e72d2\AndroidManifest.xml:19:5-25:19
@@ -83,6 +91,10 @@ MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\Artur
 MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.2.0.aar\50dcd2fa68e21a85dff6dc20c7644067\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\55ed7875854ff05734cd072a4cb01ebc\AndroidManifest.xml:23:5-20
 MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\55ed7875854ff05734cd072a4cb01ebc\AndroidManifest.xml:23:5-20
+MERGED from [com.google.android.gms:play-services-location:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-location-11.0.4.aar\7e32fc4fa436c17a8755b2e70023f548\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-location:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-location-11.0.4.aar\7e32fc4fa436c17a8755b2e70023f548\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.0.4.aar\fe7b44849ad6bc5c54797918edc22452\AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.0.4.aar\fe7b44849ad6bc5c54797918edc22452\AndroidManifest.xml:24:5-19
 MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\f466b4438146a691a8e8411cc858b4f0\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\f466b4438146a691a8e8411cc858b4f0\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\461d2167158556a3adf9689471e721c8\AndroidManifest.xml:24:5-34:19
@@ -116,129 +128,141 @@ MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Arturo\.gra
 MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\21145fd94c5b1e492e5d0b2a234aa67f\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\21145fd94c5b1e492e5d0b2a234aa67f\AndroidManifest.xml:25:5-20
 	android:supportsRtl
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:15:9-35
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:14:9-41
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:15:9-41
 	android:icon
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:13:9-43
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:14:9-43
 	android:allowBackup
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:13:9-35
 	android:theme
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:16:9-40
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:17:9-40
+meta-data#com.google.android.geo.API_KEY
+ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:18:9-20:71
+	android:value
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:20:13-68
+	android:name
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:19:13-58
 activity#com.example.proyecto.appproffrontend.LoginActivity
-ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:17:9-26:20
+ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:22:9-31:20
 	android:parentActivityName
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:20:13-92
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:25:13-56
 	android:label
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:19:13-45
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:24:13-45
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:18:13-78
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:23:13-42
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:21:13-25:29
+ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:26:13-30:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:22:17-69
+ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:27:17-69
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:22:25-66
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:27:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:24:17-77
+ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:29:17-77
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:24:27-74
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:29:27-74
 activity#com.example.proyecto.appproffrontend.Perfil_Profesor
-ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:27:9-30:95
+ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:32:9-35:59
 	android:parentActivityName
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:30:13-92
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:35:13-56
 	android:label
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:29:13-45
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:34:13-45
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:28:13-44
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:33:13-44
 activity#com.example.proyecto.appproffrontend.Pagar_Profesor
-ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:31:9-34:61
+ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:36:9-39:61
 	android:parentActivityName
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:34:13-58
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:39:13-58
 	android:label
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:33:13-45
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:38:13-45
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:32:13-79
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:37:13-43
 activity#com.example.proyecto.appproffrontend.Ver_Profesor
-ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:35:9-39:20
+ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:40:9-43:72
 	android:parentActivityName
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:38:13-96
-	android:label
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:37:13-45
-	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:36:13-77
-activity#com.example.proyecto.appproffrontend.Ver_Favorito
-ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:40:9-44:20
-	android:parentActivityName
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:43:13-92
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:43:13-60
 	android:label
 		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:42:13-45
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:41:13-77
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:41:13-41
+activity#com.example.proyecto.appproffrontend.Ver_Favorito
+ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:44:9-47:68
+	android:parentActivityName
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:47:13-56
+	android:label
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:46:13-45
+	android:name
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:45:13-41
 activity#com.example.proyecto.appproffrontend.Busqueda_Profesores
-ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:45:9-48:95
+ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:48:9-51:59
 	android:parentActivityName
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:48:13-92
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:51:13-56
 	android:label
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:47:13-45
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:50:13-45
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:46:13-84
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:49:13-48
 activity#com.example.proyecto.appproffrontend.Listar_Profesores
-ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:49:9-52:101
+ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:52:9-55:65
 	android:parentActivityName
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:52:13-98
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:55:13-62
 	android:label
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:51:13-45
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:54:13-45
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:50:13-82
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:53:13-46
 activity#com.example.proyecto.appproffrontend.Modificar_Perfil_1
-ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:53:9-56:61
+ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:56:9-59:61
 	android:parentActivityName
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:56:13-58
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:59:13-58
 	android:label
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:55:13-45
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:58:13-45
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:54:13-83
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:57:13-47
 activity#com.example.proyecto.appproffrontend.Modificar_Perfil_2
-ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:57:9-60:100
+ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:60:9-63:64
 	android:parentActivityName
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:60:13-97
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:63:13-61
 	android:label
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:59:13-45
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:62:13-45
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:58:13-83
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:61:13-47
 activity#com.example.proyecto.appproffrontend.Registro1
-ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:61:9-65:24
+ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:64:9-67:68
 	android:parentActivityName
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:64:13-92
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:67:13-56
 	android:label
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:63:13-45
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:66:13-45
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:62:13-74
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:65:13-38
 activity#com.example.proyecto.appproffrontend.Registro2
-ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:66:9-69:91
+ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:68:9-71:55
 	android:parentActivityName
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:69:13-88
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:71:13-52
 	android:label
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:68:13-45
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:70:13-45
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:67:13-74
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:69:13-38
 activity#com.example.proyecto.appproffrontend.Registro3
-ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:70:9-74:20
+ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:72:9-75:64
 	android:parentActivityName
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:73:13-88
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:75:13-52
 	android:label
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:72:13-45
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:74:13-45
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:71:13-74
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:73:13-38
 activity#com.example.proyecto.appproffrontend.Ver_favoritos
-ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:75:9-79:20
+ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:76:9-79:74
 	android:parentActivityName
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:78:13-98
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:79:13-62
 	android:label
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:76:13-45
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:78:13-45
 	android:name
-		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:77:13-78
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:77:13-42
+activity#com.example.proyecto.appproffrontend.MapsActivity
+ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:80:9-82:68
+	android:label
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:82:13-56
+	android:name
+		ADDED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml:81:13-41
 uses-sdk
 INJECTED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Arturo\Documents\prueba2\Frontend-Master\app\src\main\AndroidManifest.xml
@@ -257,6 +281,10 @@ MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\Artur
 MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.2.0.aar\50dcd2fa68e21a85dff6dc20c7644067\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\55ed7875854ff05734cd072a4cb01ebc\AndroidManifest.xml:21:5-43
 MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\55ed7875854ff05734cd072a4cb01ebc\AndroidManifest.xml:21:5-43
+MERGED from [com.google.android.gms:play-services-location:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-location-11.0.4.aar\7e32fc4fa436c17a8755b2e70023f548\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-location:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-location-11.0.4.aar\7e32fc4fa436c17a8755b2e70023f548\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.0.4.aar\fe7b44849ad6bc5c54797918edc22452\AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.0.4.aar\fe7b44849ad6bc5c54797918edc22452\AndroidManifest.xml:23:5-43
 MERGED from [com.google.firebase:firebase-database-connection:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.0.4.aar\78589d58cc3686c024fb89b0f884cafb\AndroidManifest.xml:3:5-43
 MERGED from [com.google.firebase:firebase-database-connection:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.0.4.aar\78589d58cc3686c024fb89b0f884cafb\AndroidManifest.xml:3:5-43
 MERGED from [com.google.firebase:firebase-core:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-core-11.0.4.aar\f466b4438146a691a8e8411cc858b4f0\AndroidManifest.xml:4:5-43
@@ -326,13 +354,21 @@ ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Arturo\.g
 	android:name
 		ADDED from [com.google.android.gms:play-services-auth:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.4.aar\0abd21fed9510846b6af78f4513e72d2\AndroidManifest.xml:24:18-63
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\461d2167158556a3adf9689471e721c8\AndroidManifest.xml:21:5-78
+ADDED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.0.4.aar\fe7b44849ad6bc5c54797918edc22452\AndroidManifest.xml:19:5-78
+MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\461d2167158556a3adf9689471e721c8\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\461d2167158556a3adf9689471e721c8\AndroidManifest.xml:21:5-78
 MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\c00233a8e40ce68a4f1002b91403dafb\AndroidManifest.xml:21:5-78
 MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\c00233a8e40ce68a4f1002b91403dafb\AndroidManifest.xml:21:5-78
 MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\c7dbf290a7672e59620c6498bd65ddde\AndroidManifest.xml:19:5-78
 MERGED from [com.google.firebase:firebase-iid:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.0.4.aar\c7dbf290a7672e59620c6498bd65ddde\AndroidManifest.xml:19:5-78
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\461d2167158556a3adf9689471e721c8\AndroidManifest.xml:21:22-76
+		ADDED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.0.4.aar\fe7b44849ad6bc5c54797918edc22452\AndroidManifest.xml:19:22-76
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.0.4.aar\fe7b44849ad6bc5c54797918edc22452\AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.0.4.aar\fe7b44849ad6bc5c54797918edc22452\AndroidManifest.xml:21:19-51
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.0.4.aar\fe7b44849ad6bc5c54797918edc22452\AndroidManifest.xml:21:52-75
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [com.google.firebase:firebase-analytics:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.0.4.aar\461d2167158556a3adf9689471e721c8\AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-analytics-impl:11.0.4] C:\Users\Arturo\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.0.4.aar\c00233a8e40ce68a4f1002b91403dafb\AndroidManifest.xml:22:5-67

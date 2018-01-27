@@ -6,7 +6,8 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -14,10 +15,14 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC4ibdbdsTYjAVXvUsqWTL0vnHtC2q06WY" />
+
         <activity
-            android:name="com.example.proyecto.appproffrontend.LoginActivity"
+            android:name=".LoginActivity"
             android:label="@string/app_name"
-            android:parentActivityName="com.example.proyecto.appproffrontend.LoginActivity">
+            android:parentActivityName=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,56 +32,54 @@
         <activity
             android:name=".Perfil_Profesor"
             android:label="@string/app_name"
-            android:parentActivityName="com.example.proyecto.appproffrontend.LoginActivity" />
+            android:parentActivityName=".LoginActivity" />
         <activity
-            android:name="com.example.proyecto.appproffrontend.Pagar_Profesor"
+            android:name=".Pagar_Profesor"
             android:label="@string/app_name"
             android:parentActivityName=".Perfil_Profesor" />
         <activity
-            android:name="com.example.proyecto.appproffrontend.Ver_Profesor"
+            android:name=".Ver_Profesor"
             android:label="@string/app_name"
-            android:parentActivityName="com.example.proyecto.appproffrontend.Listar_Profesores">
-        </activity>
+            android:parentActivityName=".Listar_Profesores"></activity>
         <activity
-            android:name="com.example.proyecto.appproffrontend.Ver_Favorito"
+            android:name=".Ver_Favorito"
             android:label="@string/app_name"
-            android:parentActivityName="com.example.proyecto.appproffrontend.Ver_favoritos">
-        </activity>
+            android:parentActivityName=".Ver_favoritos"></activity>
         <activity
-            android:name="com.example.proyecto.appproffrontend.Busqueda_Profesores"
+            android:name=".Busqueda_Profesores"
             android:label="@string/app_name"
-            android:parentActivityName="com.example.proyecto.appproffrontend.LoginActivity" />
+            android:parentActivityName=".LoginActivity" />
         <activity
-            android:name="com.example.proyecto.appproffrontend.Listar_Profesores"
+            android:name=".Listar_Profesores"
             android:label="@string/app_name"
-            android:parentActivityName="com.example.proyecto.appproffrontend.Busqueda_Profesores" />
+            android:parentActivityName=".Busqueda_Profesores" />
         <activity
-            android:name="com.example.proyecto.appproffrontend.Modificar_Perfil_1"
+            android:name=".Modificar_Perfil_1"
             android:label="@string/app_name"
             android:parentActivityName=".Perfil_Profesor" />
         <activity
-            android:name="com.example.proyecto.appproffrontend.Modificar_Perfil_2"
+            android:name=".Modificar_Perfil_2"
             android:label="@string/app_name"
-            android:parentActivityName="com.example.proyecto.appproffrontend.Modificar_Perfil_1" />
+            android:parentActivityName=".Modificar_Perfil_1" />
         <activity
-            android:name="com.example.proyecto.appproffrontend.Registro1"
+            android:name=".Registro1"
             android:label="@string/app_name"
-            android:parentActivityName="com.example.proyecto.appproffrontend.LoginActivity" >
-            </activity>
+            android:parentActivityName=".LoginActivity"></activity>
         <activity
-            android:name="com.example.proyecto.appproffrontend.Registro2"
+            android:name=".Registro2"
             android:label="@string/app_name"
-            android:parentActivityName="com.example.proyecto.appproffrontend.Registro1" />
+            android:parentActivityName=".Registro1" />
         <activity
-            android:name="com.example.proyecto.appproffrontend.Registro3"
+            android:name=".Registro3"
             android:label="@string/app_name"
-            android:parentActivityName="com.example.proyecto.appproffrontend.Registro2" >
-        </activity>
+            android:parentActivityName=".Registro2"></activity>
         <activity
+            android:name=".Ver_favoritos"
             android:label="@string/app_name"
-            android:name="com.example.proyecto.appproffrontend.Ver_favoritos"
-            android:parentActivityName="com.example.proyecto.appproffrontend.Busqueda_Profesores" >
-        </activity>
+            android:parentActivityName=".Busqueda_Profesores"></activity>
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"></activity>
     </application>
 
 </manifest>

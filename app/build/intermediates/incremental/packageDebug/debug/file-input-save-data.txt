@@ -1,7 +1,0 @@
-#Internal package file, do not edit.
-#Thu Dec 28 18:08:36 CET 2017
-0.baseType=DIRECTORY
-0.base=C\:\\Users\\Arturo\\Documents\\prueba2\\Frontend-Master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\19
-0.path=classes.dex
-0.set=DEX
-count=1

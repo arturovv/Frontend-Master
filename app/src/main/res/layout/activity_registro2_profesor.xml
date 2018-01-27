@@ -44,20 +44,38 @@
         android:ems="10"
         android:hint="Teléfono de contacto*"
         android:inputType="phone" />
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button android:id="@+id/btnLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:ems="10"
+        android:text="Get Location" />
 
     <EditText
         android:id="@+id/ciudadProfesorReg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Ciudad*"
+        android:hint="City (auto-filled)"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
         android:inputType="text" />
+      </LinearLayout>
 
     <EditText
         android:id="@+id/longitud"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:visibility="gone"
         android:hint="Longitud*"
         android:inputType="text" />
 
@@ -66,6 +84,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:visibility="gone"
+
         android:hint="Latitud*"
         android:inputType="text" />
 
@@ -75,6 +95,7 @@
         android:layout_height="wrap_content"
         android:hint="Experiencia"
         android:inputType="text"
+        android:layout_marginTop="20dp"
         android:selectAllOnFocus="false"
         android:singleLine="false" />
     <TextView
