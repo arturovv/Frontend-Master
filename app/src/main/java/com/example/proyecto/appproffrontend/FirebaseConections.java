@@ -42,10 +42,15 @@ public class FirebaseConections extends AppCompatActivity {
     DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
 
 
+    public String tranformarEmail(String email){
+        return email.replace(".","?");
+    }
+
     // Importante acordarse de añadir longitud y latutid al profesor
     public void writeNewTeacherLocation(FirebaseAuth mAuth, String email, String ciudad, String longitud, String latitud) {
-        DatabaseReference currentUserDB = mDatabase.child(mAuth.getCurrentUser().getUid());
-        currentUserDB.child("email").setValue(email);
+        DatabaseReference currentUserDB = mDatabase.child(tranformarEmail(email));
+
+        currentUserDB.child("email").setValue(tranformarEmail(email));
         currentUserDB.child("longitud").setValue(longitud);
         currentUserDB.child("ciudad").setValue(ciudad);
         currentUserDB.child("latitud").setValue(latitud);
@@ -54,7 +59,7 @@ public class FirebaseConections extends AppCompatActivity {
 
     // [START basic_write]
     public void writeNewUser(FirebaseAuth mAuth, String usr) {
-        DatabaseReference currentUserDB = mDatabase.child(mAuth.getCurrentUser().getUid());
+        DatabaseReference currentUserDB = mDatabase.child(tranformarEmail(usr));
         currentUserDB.setValue(usr);
     }
     // [END basic_write]

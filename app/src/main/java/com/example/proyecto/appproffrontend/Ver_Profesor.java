@@ -17,6 +17,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -60,7 +66,7 @@ public class Ver_Profesor extends AppCompatActivity {
     //for google maps
     private SharedPreferences sharedPref;
     private FirebaseAuth mAuth;
-
+    DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
 
 
     @Override
@@ -97,21 +103,40 @@ public class Ver_Profesor extends AppCompatActivity {
 
         //AQUI TE DEJO EL EMAIL DEL PROFESOR LISTADO, ES CLAVE UNICA, NO SE REPITE EN LA BD
         String email =  profesor.getNombreUsuario(); //puedes buscar por esto y luego obtener la latitud y longitud
+        String emailBusqueda = email.replace(".","?");;
+        //implementar busqueda
+        DatabaseReference currentUserDB = mDatabase.child(emailBusqueda);
+        sharedPref = this.getSharedPreferences("APPROF", Context.MODE_PRIVATE);
 
-        //*implementar busqueda*
+        currentUserDB.child("longitud").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                SharedPreferences.Editor editor = sharedPref.edit();
+                editor.putString("lon", dataSnapshot.getValue(String.class)).apply();
+            }
 
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
 
-        //strings!!!
-        final String lat = "39.4757192"; //LATITUD: COMPLETAR CON LOS RESULTADOS DE LA BUSQUEDA EN FIREBASE
-        final String lon = "-0.4258722"; //LONGITUD: COMPLETAR CON LOS RESULTADOS DE LA BUSQUEDA EN FIREBASE
+            }
+        });
+        currentUserDB.child("latitud").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                SharedPreferences.Editor editor = sharedPref.edit();
+                editor.putString("lat", dataSnapshot.getValue(String.class)).apply();
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
 
         final Intent i = new Intent(this, MapsActivity.class);
-        sharedPref = this.getSharedPreferences("APPROF", Context.MODE_PRIVATE);
         ((Button) findViewById(R.id.btnMaps)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                SharedPreferences.Editor editor = sharedPref.edit();
-                editor.putString("lat", lat).apply();
-                editor.putString("lon", lon).apply();
                 startActivity(i);
             }
         });

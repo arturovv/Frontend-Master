@@ -65,6 +65,8 @@ public class LoginActivity extends AppCompatActivity {
     private Intent i1, i0;
     private String email, password;
     private boolean googleAttempt = false;
+    private boolean exitAttempt = false;
+
 
     //google auth
     private GoogleApiClient mGoogleApiClient;
@@ -86,6 +88,8 @@ public class LoginActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         if(mAuth.getCurrentUser() != null) updateUI(2);
+
+        exitAttempt = false;
 
         i1 = new Intent(this, Perfil_Profesor.class);
         i0 = new Intent(this, Busqueda_Profesores.class);
@@ -375,5 +379,15 @@ public class LoginActivity extends AppCompatActivity {
         int prof = info.getTipo();
         if(prof == 0) startActivity(i0);
         else startActivity(i1);
+    }
+    @Override
+    public void onBackPressed() {
+        if(!exitAttempt) {
+            Toast.makeText(LoginActivity.this, "Tap twice to exit.",
+                    Toast.LENGTH_SHORT).show();
+            exitAttempt = true;
+        } else {
+            moveTaskToBack(true);
+        }
     }
 }
