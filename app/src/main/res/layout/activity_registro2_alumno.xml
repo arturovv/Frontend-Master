@@ -53,7 +53,7 @@
             android:checked="false"
             android:duplicateParentState="false"
             android:fontFamily="sans-serif-medium"
-            android:text="I have read and accepted the terms & conditions*" />
+            android:text="I have read and accepted the terms and conditions*" />
 
         <Button
             android:id="@+id/register"

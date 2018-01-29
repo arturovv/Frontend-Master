@@ -84,7 +84,7 @@
             android:layout_weight="1"
             android:checked="false"
             android:duplicateParentState="false"
-            android:text="I have read and accepted the terms & conditions*" />
+            android:text="I have read and accepted the terms and conditions*" />
 
         <Button
             android:id="@+id/registerbutton"
