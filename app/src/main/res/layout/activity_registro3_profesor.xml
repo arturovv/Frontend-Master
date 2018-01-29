@@ -7,7 +7,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Horarios*"
+        android:text="Schedules*"
         android:textSize="18sp"
         android:textStyle="normal|bold" />
 
@@ -20,7 +20,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Asignaturas*"
+        android:text="Subjects*"
         android:textSize="18sp"
         android:textStyle="normal|bold" />
 
@@ -39,7 +39,7 @@
             android:id="@+id/curso"
             android:layout_width="163dp"
             android:layout_height="wrap_content"
-            android:text="Curso"
+            android:text="Course"
             android:textSize="18sp"
             android:textStyle="normal|bold" />
 
@@ -59,7 +59,7 @@
             android:id="@+id/modo"
             android:layout_width="163dp"
             android:layout_height="wrap_content"
-            android:text="Modalidad"
+            android:text="Mode"
             android:textSize="18sp"
             android:textStyle="normal|bold" />
 
@@ -84,14 +84,14 @@
             android:layout_weight="1"
             android:checked="false"
             android:duplicateParentState="false"
-            android:text="He leido y acepto los terminos y condiciones*" />
+            android:text="I have read and accepted the terms & conditions*" />
 
         <Button
             android:id="@+id/registerbutton"
             android:layout_width="134dp"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:text="Registrarse" />
+            android:text="Register" />
     </LinearLayout>
 
 </LinearLayout>

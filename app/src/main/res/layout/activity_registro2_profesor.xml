@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Nombre*"
+        android:hint="Username*"
         android:inputType="textPersonName" />
 
     <EditText
@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Contraseña*"
+        android:hint="Password*"
         android:inputType="textPassword" />
 
     <EditText
@@ -26,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Confirmar contraseña*"
+        android:hint="Confirm password*"
         android:inputType="textPassword" />
 
     <EditText
@@ -34,7 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Correo electrónico*"
+        android:hint="e-mail*"
         android:inputType="textEmailAddress" />
 
     <EditText
@@ -42,7 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Teléfono de contacto*"
+        android:hint="Phone number*"
         android:inputType="phone" />
     <LinearLayout android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -93,7 +93,7 @@
         android:id="@+id/experienciaProfesorReg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Experiencia"
+        android:hint="Experience"
         android:inputType="text"
         android:layout_marginTop="20dp"
         android:selectAllOnFocus="false"
@@ -101,7 +101,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="*Obligatorio" />
+        android:text="*Obligatory" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -114,7 +114,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_marginBottom="10sp"
-            android:text="Siguiente" />
+            android:text="Next" />
 
     </LinearLayout>
 </LinearLayout>

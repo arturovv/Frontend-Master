@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:fontFamily="sans-serif-medium"
-        android:hint="Email*"
+        android:hint="E-mail*"
         android:inputType="textPersonName" />
 
     <EditText
@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:fontFamily="sans-serif-medium"
-        android:hint="Contraseña*"
+        android:hint="Password*"
         android:inputType="textPassword" />
 
     <EditText
@@ -28,14 +28,14 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:fontFamily="sans-serif-medium"
-        android:hint="Confirmar contraseña*"
+        android:hint="Confirm password*"
         android:inputType="textPassword" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="*Obligatorio" />
+        android:text="*Obligatory" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -53,14 +53,14 @@
             android:checked="false"
             android:duplicateParentState="false"
             android:fontFamily="sans-serif-medium"
-            android:text="He leido y acepto los terminos y condiciones*" />
+            android:text="I have read and accepted the terms & conditions*" />
 
         <Button
             android:id="@+id/register"
             android:layout_width="134dp"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:text="Registrarse" />
+            android:text="Register" />
     </LinearLayout>
 
 </LinearLayout>
