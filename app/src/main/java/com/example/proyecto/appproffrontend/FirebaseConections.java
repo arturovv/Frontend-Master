@@ -76,4 +76,5 @@ public class FirebaseConections extends AppCompatActivity {
             currentUserDB.child("latitud").setValue(latitud);
         }
     }
+
 }
