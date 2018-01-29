@@ -84,7 +84,7 @@ public class Pagar_Profesor extends AppCompatActivity {
                 {
                     AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(local);
 
-                    dlgAlert.setMessage("Es necesario añadir todos los campos");
+                    dlgAlert.setMessage("All fields must be filled");
                     dlgAlert.setTitle("Error...");
                     dlgAlert.setPositiveButton("OK", null);
                     dlgAlert.setCancelable(true);

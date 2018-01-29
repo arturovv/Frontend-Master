@@ -165,11 +165,11 @@ public class Ver_Profesor extends AppCompatActivity {
 
                     if(flag) {
                         facade.anyadir_profesor_favorito(profesor);
-                        Toast.makeText(Ver_Profesor.this, "Profesor " + user.getText() +
-                                        " añadido a favoritos", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Ver_Profesor.this, "Professor " + user.getText() +
+                                        " was added to favourites", Toast.LENGTH_SHORT).show();
                     } else
-                        Toast.makeText(Ver_Profesor.this, "Profesor " + user.getText() +
-                                " ya ha sido añadido", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Ver_Profesor.this, "Professor " + user.getText() +
+                                " was already added", Toast.LENGTH_SHORT).show();
                 } catch (APIexception apIexception) {
                     apIexception.printStackTrace();
                 }
@@ -211,7 +211,7 @@ public class Ver_Profesor extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                String msg = "Error al enviar valoracion";
+                String msg = "An error has occurred. Please try again";
 
                 // Enviar valoración a la base de datos
                 try {

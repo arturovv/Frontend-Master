@@ -284,36 +284,36 @@ public class Registro2 extends AppCompatActivity {
             AlertDialog.Builder dlgAlert = new AlertDialog.Builder(this);
             switch (code) {
                 case 0:
-                    dlgAlert.setMessage("Rellene el campo de usuario");
+                    dlgAlert.setMessage("Introduce an username");
                     break;
                 case 1:
-                    dlgAlert.setMessage("Rellene el campo de contrasena");
+                    dlgAlert.setMessage("Introduce a password");
                     break;
                 case 2:
-                    dlgAlert.setMessage("Rellene el campo de confirmacion de contrasena");
+                    dlgAlert.setMessage("Repeat your password");
                     break;
                 case 3:
-                    dlgAlert.setMessage("Las contrasenas no coinciden");
+                    dlgAlert.setMessage("Passwords do not match");
                     break;
                 case 4:
-                    dlgAlert.setMessage("Rellene el campo de e-mail");
+                    dlgAlert.setMessage("Introduce an e-mail");
                     break;
                 case 5:
-                    dlgAlert.setMessage("Introduzca un e-mail valido");
+                    dlgAlert.setMessage("Introduce a valid e-mail");
                     break;
                 case 6:
-                    dlgAlert.setMessage("Rellene el campo de telefono");
+                    dlgAlert.setMessage("Introduce a phone number");
                     break;
                 case 7:
-                    dlgAlert.setMessage("Introduzca un telefono valido");
+                    dlgAlert.setMessage("Introduce a valid phone number");
                     break;
                 case 8:
-                    dlgAlert.setMessage("Acepte los terminos y condiciones");
+                    dlgAlert.setMessage("You must accept the Terms & Conditions");
                     break;
                 case 9:
                     dlgAlert.setMessage("Error with Location. Try again.");
                 case 10:
-                    dlgAlert.setMessage("Error durante el registro");
+                    dlgAlert.setMessage("Registration error. Try again");
                 // anyadido adrian
                 case 11:
                     dlgAlert.setMessage("Error with Location. Try again.");

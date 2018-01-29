@@ -129,9 +129,9 @@ public class Modificar_Perfil_2 extends AppCompatActivity implements MultiSpinne
         switch (code) {
             case 10:
                 try {
-                    dlgAlert.setMessage("Error durante el registro: \n" + respuesta.getString("message"));
+                    dlgAlert.setMessage("Registration failed: \n" + respuesta.getString("message"));
                 } catch (JSONException ex) {
-                    dlgAlert.setMessage("Error durante el registro:");
+                    dlgAlert.setMessage("Registration failed:");
                 }
         }
         dlgAlert.setTitle("Error...");

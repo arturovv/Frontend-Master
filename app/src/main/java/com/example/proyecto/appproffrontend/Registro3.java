@@ -227,16 +227,16 @@ public class Registro3 extends AppCompatActivity implements MultiSpinner.MultiSp
         AlertDialog.Builder dlgAlert = new AlertDialog.Builder(this);
         switch (code) {
             case 1:
-                dlgAlert.setMessage("Debe seleccionar al menos un horario");
+                dlgAlert.setMessage("You must select at least one schedule");
                 break;
             case 2:
-                dlgAlert.setMessage("Debe seleccionar al menos una asignatura");
+                dlgAlert.setMessage("You must select at least one subject");
                 break;
             case 8:
-                dlgAlert.setMessage("Acepte los terminos y condiciones");
+                dlgAlert.setMessage("You have to accept Terms & Conditions");
                 break;
             case 10:
-                    dlgAlert.setMessage("Error durante el registro.");
+                    dlgAlert.setMessage("Registration error. Try again");
         }
         dlgAlert.setTitle("Error...");
         dlgAlert.setPositiveButton("OK", null);

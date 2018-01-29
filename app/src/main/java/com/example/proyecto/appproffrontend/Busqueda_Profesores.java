@@ -62,7 +62,7 @@ public class Busqueda_Profesores extends AppCompatActivity implements MultiSpinn
                 {
                     AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(local);
 
-                    dlgAlert.setMessage("Es necesario rellenar al menos un campo");
+                    dlgAlert.setMessage("You need to fill one field at least");
                     dlgAlert.setTitle("Error...");
                     dlgAlert.setPositiveButton("OK", null);
                     dlgAlert.setCancelable(true);

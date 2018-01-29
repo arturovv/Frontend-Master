@@ -13,12 +13,12 @@ public class Facade {
 
     //Deberían ser consultas
     private ArrayList<String> horariosDisponibles = new ArrayList<String>() {{
-       add("Lunes Mañana"); add("Lunes Tarde"); add("Martes Mañana"); add("Martes Tarde");
-        add("Miércoles Mañana"); add("Miércoles Tarde"); add("Jueves Mañana"); add("Jueves Tarde");
-        add("Viernes Mañana"); add("Viernes Tarde");
+       add("Monday Morning"); add("Monday evening"); add("Tuesday morning"); add("Tuesday evening");
+        add("Wednesday morning"); add("Wednesday evening"); add("Thursday morning"); add("Thursday evening");
+        add("Friday morning"); add("Friday evening");
     }};
     private ArrayList<String> modalidadesDisponibles = new ArrayList<String>() {{
-        add("---"); add("Presencial"); add("On-line");
+        add("---"); add("On-site"); add("On-line");
     }};
 
     public Facade(API api) {

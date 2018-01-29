@@ -150,24 +150,24 @@ public class Modificar_Perfil_1 extends AppCompatActivity implements MultiSpinne
         AlertDialog.Builder dlgAlert = new AlertDialog.Builder(this);
         switch (code) {
             case 4:
-                dlgAlert.setMessage("Rellene el campo de e-mail");
+                dlgAlert.setMessage("Fill the e-mail field");
                 break;
             case 5:
-                dlgAlert.setMessage("Introduzca un e-mail valido");
+                dlgAlert.setMessage("Introduce a correct e-mail");
                 break;
             case 6:
-                dlgAlert.setMessage("Rellene el campo de telefono");
+                dlgAlert.setMessage("Fill the phone field");
                 break;
             case 7:
-                dlgAlert.setMessage("Introduzca un telefono valido");
+                dlgAlert.setMessage("Introduce a correct phone number");
                 break;
             case 8:
-                dlgAlert.setMessage("Debe seleccionar al menos un horario");
+                dlgAlert.setMessage("You must select at least one schedule");
                 break;
             case 9:
-                dlgAlert.setMessage("Rellene el campo de Ciudad");
+                dlgAlert.setMessage("Fill the City field");
             case 10:
-                dlgAlert.setMessage("Debe seleccionar al menos una asignatura");
+                dlgAlert.setMessage("You must select at least one subject");
         }
         dlgAlert.setTitle("Error...");
         dlgAlert.setPositiveButton("OK", null);
