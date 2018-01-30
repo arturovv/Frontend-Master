@@ -290,14 +290,6 @@
                     android:layout_marginTop="10dp"
                     android:text="@string/action_addfav_prof"
                     android:textStyle="bold" />
-                <Button
-                    android:id="@+id/btnChat"
-                    style="?android:textAppearanceSmall"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Chat"
-                    android:textStyle="bold" />
             </LinearLayout>
 
 

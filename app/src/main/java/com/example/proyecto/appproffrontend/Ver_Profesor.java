@@ -48,7 +48,6 @@ public class Ver_Profesor extends AppCompatActivity {
     // Quitar texto que sale después de la valoración
     private TextView txtValoracionPerfil;
     private Button btnEnviarValoracionPerfil;
-    private Button btnChat;
 
     // Falta ListenerOnButton para anyadir profesor a favoritos
     private Button btnAnyadirProfesorFav;
@@ -97,8 +96,6 @@ public class Ver_Profesor extends AppCompatActivity {
         addListenerOnButtonValoracion();
         // Listener botón de profesor favorito
         addListenerOnButtonProfFavorito();
-        addListenerOnButtonChat();
-
 
         //google maps code
         mAuth = FirebaseAuth.getInstance();
@@ -180,17 +177,6 @@ public class Ver_Profesor extends AppCompatActivity {
         });
 
     }
-    public void addListenerOnButtonChat() {
-
-        btnChat = (Button) findViewById(R.id.btnChat);
-        final Intent i = new Intent(this, Chat.class);
-        ((Button) findViewById(R.id.btnChat)).setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View view) {
-                        i.putExtra("other",email.getText().toString());
-                        startActivity(i);
-                    }
-                });
-        }
 
 
     /*
